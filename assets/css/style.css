@@ -315,7 +315,42 @@ input {
 }
         
 
+/* ====================SLICK BANNER SLIDER============= */
+.slider__wrap{
+    width: 100%;
+    overflow: hidden;
+}
+.slider{
+    width: 100%;
+}
+.slider .item{
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+.slider .item__image{
+    width: 100vw;
+    height: 80vh;
+    background-image: url(../images/Clip.png);
+    background-color: var(--black-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+.caption{
+    position: absolute;
+    top: 180px;
+    right: 150px;
+    float: right;
+    color: var(--white-color);
+}
+/* ====================END SLICK BANNER SLIDER=============
+
+
 /*=========================HERO SECTION==================*/
+
 .main{
     width: 100%;
     height: 90vh;
@@ -734,6 +769,7 @@ input {
     display: block;
     margin: .4rem;
     padding: .4rem 0;
+    line-height: 26px;
 }
 
 .condition{
