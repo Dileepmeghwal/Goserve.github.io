@@ -9,12 +9,17 @@
     <!--=============== FAVICONS ===============-->
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
 
+    <!-- ================AOS====================== -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== SLICK SLIDER ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -49,7 +54,7 @@
     </div>
     <header class="header" id="header">
         <nav class="nav container">
-            <div class="nav__logo">
+            <div class="nav__logo" data-aos="fade-up-left">
                 <a href="#" class="">
                     <img src="./assets/images/logo.png" alt="">
                 </a>
@@ -63,6 +68,10 @@
                     <span></span>
                     <li class="nav__item">
                         <a href="#about" class="nav__link">About Us</a>
+                    </li>
+                    <span></span>
+                    <li class="nav__item">
+                        <a href="#product" class="nav__link">our franchises</a>
                     </li>
                     <span></span>
                     <li class="nav__item">
@@ -102,58 +111,72 @@
                 <div class="item__image">
                     
                 </div>
-                <div class="caption">
-                    <h1>Services</h1>
-                    <h3>Top Models repaire</h3>
+                <div class="caption" data-count="1">
+                    <div class="main__text">
+                        <h1 class="italic__text">A Reliable </h1>
+                        <h1 class="heading">TWO WHEELER <br>
+                            <span class="bold" >REPAIR SERVICE</span> <br>
+                            IN AHMEDABAD
+                        </h1>
+                        <p class="subtitle">
+                            Follow these three simple steps to book your <br>
+                            Scooterette & bike Repair service near you.
+                        </p>
+            
+                        <a href="#" class="book__now">
+                            Book Now
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="item">
                 <div class="item__image">
                     
                 </div>
-                <div class="caption">
-                    <h1>Services</h1>
-                    <h3>Top Models repaire</h3>
+                <div class="caption" data-count="2">
+                    <div class="main__text">
+                        <h1 class="italic__text">A Reliable </h1>
+                        <h1 class="heading">TWO WHEELER <br>
+                            <span class="bold" >REPAIR SERVICE</span> <br>
+                            IN AHMEDABAD
+                        </h1>
+                        <p class="subtitle">
+                            Follow these three simple steps to book your <br>
+                            Scooterette & bike Repair service near you.
+                        </p>
+            
+                        <a href="#" class="book__now">
+                            Book Now
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="item">
                 <div class="item__image">
                     
                 </div>
-                <div class="caption">
-                    <h1>Services</h1>
-                    <h3>Top Models repaire</h3>
+                <div class="caption" data-count="3">
+                    <div class="main__text">
+                        <h1 class="italic__text">A Reliable </h1>
+                        <h1 class="heading">TWO WHEELER <br>
+                            <span class="bold" >REPAIR SERVICE</span> <br>
+                            IN AHMEDABAD
+                        </h1>
+                        <p class="subtitle">
+                            Follow these three simple steps to book your <br>
+                            Scooterette & bike Repair service near you.
+                        </p>
+            
+                        <a href="#" class="book__now">
+                            Book Now
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <section class="main">
-        <div class="main__text">
-            <h1 class="italic__text">A Reliable </h1>
-            <h1 class="heading">TWO WHEELER <br>
-                <span>REPAIR SERVICE</span> <br>
-                IN AHMEDABAD
-            </h1>
-            <p class="subtitle">
-                Follow these three simple steps to book your <br>
-                Scooterette & bike Repair service near you.
-            </p>
 
-            <a href="#" class="book__now">
-                Book Now
-            </a>
-        </div>
-
-        <div class="indicator flex">
-            <div class="bar">
-            </div>
-            <div class="bar">
-            </div>
-            <div class="bar">
-            </div>
-        </div>
-    </section>
-    <!-- =========================HERO END================== -->
+    <!-- =========================SLICK SLIDER END================== -->
 
 
 
@@ -166,7 +189,7 @@
         <div class="circle">
             <img src="./assets/images/Ellipse 4.png" alt="">
         </div>
-        <div class="booking__inner inner">
+        <div class="booking__inner inner" data-aos="fade-up-left">
             <div class="inner__text">
                 <h1>Book Online</h1>
             </div>
@@ -182,64 +205,27 @@
             <div class="small__vector">
                 <img src="./assets/images/small-vector.png" alt="">
             </div>
-            <div class="booking__flex flex">
-                <div class="booking__box">
-                    <div class="icons__circle">
-                        <div class="dotted__arrow">
-                            <img src="./assets/images/arrow-shap.png" alt="">
-                        </div>
-                        <div class="arrow">
-                            <img src="./assets/images/down-arrow (2) copy.png" alt="">
-                        </div>
-                        <div class="badge">
-                            1
-                        </div>
-                        <div class="box__icon">
-                            <img src="./assets/images/login (1).png" alt="">
-                        </div>
-                    </div>
-                    <div class="booking__text">
-                        <h4>Login / RegistrationIpsum</h4>
-                        <p>Customer can easily <br>
-                            via mobile application.</p>
-                    </div>
+
+            <div class="booking__banner">
+                <img src="./assets/images/booking-banner.png" alt="">
+            </div>
+            <div class="three__col">
+                <div class="booking__text">
+                    <h4>Login / RegistrationIpsum</h4>
+                    <p>Customer can easily <br>
+                        via mobile application.</p>
                 </div>
-                <div class="booking__box">
-                    <div class="icons__circle">
-                        <div class="dotted__arrow__two">
-                            <img src="./assets/images/arrow-shap.png" alt="">
-                        </div>
-                        <div class="arrow__two">
-                            <img src="./assets/images/down-arrow (2) copy.png" alt="">
-                        </div>
-                        <div class="badge">
-                            2
-                        </div>
-                        <div class="box__icon">
-                            <img src="./assets/images/find.png" alt="">
-                        </div>
-                    </div>
-                    <div class="booking__text">
-                        <h4>Select Nearest Franchise</h4>
-                        <p>Find nearest <br>
-                            Franchise.</p>
-                    </div>
+                <div class="booking__text">
+                    <h4>Select Nearest Franchise</h4>
+                    <p>Find nearest <br>
+                        Franchise.</p>
                 </div>
-                <div class="booking__box">
-                    <div class="icons__circle">
-                        <div class="badge">
-                            3
-                        </div>
-                        <div class="box__icon">
-                            <img src="./assets/images/booking-online.png" alt="">
-                        </div>
-                    </div>
-                    <div class="booking__text">
-                        <h4>Book your service</h4>
-                        <p>Click to book your <br>
-                            vehicle service.</p>
-                    </div>
+                <div class="booking__text">
+                    <h4>Book your service</h4>
+                    <p>Click to book your <br>
+                        vehicle service.</p>
                 </div>
+            </div>
             </div>
         </div>
     </section>
@@ -273,96 +259,130 @@
                     By <span>Go ServeIpsum</span></p>
             </div>
 
-
-            <div class="service__flex flex">
-                <div class="service__wrapper">
-                    <div class="service__box">
-                        <div class="service__icon">
-                            <img src="./assets/images/destination.png" alt="">
-                        </div>
-                        <p> Pick up & Drop</p>
+            <div class="services__wraper flex">
+                <div class="service__card">
+                    <div class="service__image">
                     </div>
-                </div>
-                <div class="service__wrapper">
-                    <div class="service__box">
-                        <div class="service__icon">
-                            <img src="./assets/images/booking.png" alt="">
-                        </div>
-                        <p> Online Booking</p>
-                    </div>
-                </div>
-                <div class="service__wrapper">
-                    <div class="service__box">
-                        <div class="service__icon">
+                    <div class="card__text">
+                        <div class="card__icon">
                             <img src="./assets/images/credit-card.png" alt="">
                         </div>
-                        <p>Online Payment</p>
-                    </div>
-                </div>
-                <div class="service__wrapper">
-                    <div class="service__box">
-                        <div class="service__icon">
-                            <img src="./assets/images/budget.png" alt="">
+                        <h3>Periodic service</h3>
+                        <p>Hence, the electirc car owners should ensure that the car is frequently ispected by a skilled and knowledeable.</p>
+                        <br>
+                        <div class="serv__flex flex">
+                            single service
+                            <span class="ri-add-line"></span>
                         </div>
-                        <p> Online Estimation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="flex row__two">
-                <div class="service__wrapper">
-                    <div class="service__box">
-                        <div class="service__icon">
-                            <img src="./assets/images/brake.png" alt="">
+                        <div class="serv__flex flex">
+                            double service
+                            <span class="ri-add-line"></span>
                         </div>
-                        <p>Genuine Spares</p>
-                    </div>
-                </div>
-                <div class="service__wrapper">
-                    <div class="service__box">
-                        <div class="service__icon">
-                            <img src="./assets/images/rupee.png" alt="">
+                        <div class="serv__flex flex">
+                            AMC service
+                            <span class="ri-add-line"></span>
                         </div>
-                        <p>Standardise Price</p>
-                    </div>
-                </div>
-                <div class="service__wrapper">
-                    <div class="service__box">
-                        <div class="service__icon">
-                            <img src="./assets/images/tow-truck.png" alt="">
+                        <div class="serv__flex flex">
+                            custmized service
+                            <span class="ri-add-line"></span>
                         </div>
-                        <p>High Tech Equipment <br>
-                            Seravice</p>
                     </div>
                 </div>
-            </div>
-            <div class="row__three flex">
-                <div class="service__wrapper">
-                    <div class="service__box">
-                        <div class="service__icon">
-                            <img src="./assets/images/technology.png" alt="">
+                <div class="service__card">
+                    <div class="service__image">
+                    </div>
+                    <div class="card__text">
+                        <div class="card__icon">
+                            <img src="./assets/images/credit-card.png" alt="">
                         </div>
-                        <p>High Tech Equipment <br>
-                            Seravice</p>
-                    </div>
-                </div>
-                <div class="service__wrapper">
-                    <div class="service__box">
-                        <div class="service__icon">
-                            <img src="./assets/images/booking.png" alt="">
+                        <h3>Periodic service</h3>
+                        <p>Hence, the electirc car owners should ensure that the car is frequently ispected by a skilled and knowledeable.</p>
+                        <br>
+                        <div class="serv__flex flex">
+                            single service
+                            <span class="ri-add-line"></span>
                         </div>
-                        <p>Accident Support & <br>
-                            Insurance</p>
+                        <div class="serv__flex flex">
+                            double service
+                            <span class="ri-add-line"></span>
+                        </div>
+                        <div class="serv__flex flex">
+                            AMC service
+                            <span class="ri-add-line"></span>
+                        </div>
+                        <div class="serv__flex flex">
+                            custmized service
+                            <span class="ri-add-line"></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="ktm__bg">
-            <div class="bike">
-                <img src="./assets/images/pngwing.com.png" alt="">
+                <div class="service__card">
+                    <div class="service__image">
+                    </div>
+                    <div class="card__text">
+                        <div class="card__icon">
+                            <img src="./assets/images/credit-card.png" alt="">
+                        </div>
+                        <h3>Periodic service</h3>
+                        <p>Hence, the electirc car owners should ensure that the car is frequently ispected by a skilled and knowledeable.</p>
+                        <br>
+                        <div class="serv__flex flex">
+                            single service
+                            <span class="ri-add-line"></span>
+                        </div>
+                        <div class="serv__flex flex">
+                            double service
+                            <span class="ri-add-line"></span>
+                        </div>
+                        <div class="serv__flex flex">
+                            AMC service
+                            <span class="ri-add-line"></span>
+                        </div>
+                        <div class="serv__flex flex">
+                            custmized service
+                            <span class="ri-add-line"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service__card">
+                    <div class="service__image">
+                    </div>
+                    <div class="card__text">
+                        <div class="card__icon">
+                            <img src="./assets/images/credit-card.png" alt="">
+                        </div>
+                        <h3>Periodic service</h3>
+                        <p>Hence, the electirc car owners should ensure that the car is frequently ispected by a skilled and knowledeable.</p>
+                    </div>
+                </div>
+                <div class="service__card">
+                    <div class="service__image">
+                    </div>
+                    <div class="card__text">
+                        <div class="card__icon">
+                            <img src="./assets/images/credit-card.png" alt="">
+                        </div>
+                        <h3>Periodic service</h3>
+                        <p>Hence, the electirc car owners should ensure that the car is frequently ispected by a skilled and knowledeable.</p>
+                    </div>
+                </div>
+                <div class="service__card">
+                    <div class="service__image">
+                    </div>
+                    <div class="card__text">
+                        <div class="card__icon">
+                            <img src="./assets/images/credit-card.png" alt="">
+                        </div>
+                        <h3>Periodic service</h3>
+                        <p>Hence, the electirc car owners should ensure that the car is frequently ispected by a skilled and knowledeable.</p>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
+    
+    
     <!-- =========================SERVICES END================== -->
 
     <!-- =========================ANNUAL PACKAGE===================== -->
@@ -391,160 +411,160 @@
                 <p>Buy our service packages like Road Side Assistance and <br>
                     Two Wheeler Service Maintenance Card and secure your ride.</p>
             </div>
+        </div>
 
-            <div class="pricing__wrapper flex">
-                <div class="price__box">
-                    <div class="price__header">
-                        GO PRIME
-                    </div>
-
-                    <div class="package">
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>4 Free Service</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>2 Oil Free</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>10% Discount on Labour</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>Free Pick & Drop</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>Insurance Support</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>Roadside Assistance</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>Accident support & insurance</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>All the package price is inclusive of tax</span>
-                        </div>
-                    </div>
-
-                    <div class="total__price flex">
-
-                        <img src="./assets/images/rupee copy.png" alt="">
-                        <p>1299.00</p>
-                    </div>
-
-                    <a href="#" class="buy__button">Buy Now</a>
-
-                    <span class="condition">Teram & Conditions</span>
+        <div class="pricing__wrapper flex">
+            <div class="price__box">
+                <div class="price__header">
+                    GO PRIME
                 </div>
 
-                <div class="price__box">
-                    <div class="price__header bg">
-                        GO SPORTS
+                <div class="package">
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>4 Free Service</span>
                     </div>
-
-                    <div class="package">
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>4 Free Service</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>2 Oil Free</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>10% Discount on Labour</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>Free Pick & Drop</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>Insurance Support</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>Roadside Assistance</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>Accident support & insurance</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>All the package price is inclusive of tax</span>
-                        </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>2 Oil Free</span>
                     </div>
-
-                    <div class="total__price flex">
-
-                        <img src="./assets/images/rupee copy.png" alt="">
-                        <p>2499.00</p>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>10% Discount on Labour</span>
                     </div>
-
-                    <a href="#" class="buy__button">Buy Now</a>
-
-                    <span class="condition">Teram & Conditions</span>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>Free Pick & Drop</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>Insurance Support</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>Roadside Assistance</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>Accident support & insurance</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>All the package price is inclusive of tax</span>
+                    </div>
                 </div>
 
-                <div class="price__box">
-                    <div class="price__header bg__two">
-                        GO ROYAL
-                    </div>
+                <div class="total__price flex">
 
-                    <div class="package">
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>4 Free Service</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>2 Oil Free</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>2 Oil Filter</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>Free Pick & Drop</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>Insurance Support</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>Roadside Assistance</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>Accident support & insurance</span>
-                        </div>
-                        <div class="price__row flex">
-                            <img src="./assets/images/price_circle.png" alt="">
-                            <span>All the package price is inclusive of tax</span>
-                        </div>
-                    </div>
-
-                    <div class="total__price flex">
-
-                        <img src="./assets/images/rupee copy.png" alt="">
-                        <p>1299.00</p>
-                    </div>
-
-                    <a href="#" class="buy__button">Buy Now</a>
-
-                    <span class="condition">Teram & Conditions</span>
+                    <img src="./assets/images/rupee copy.png" alt="">
+                    <p>1299.00</p>
                 </div>
+
+                <a href="#" class="buy__button">Buy Now</a>
+
+                <span class="condition">Teram & Conditions</span>
+            </div>
+
+            <div class="price__box">
+                <div class="price__header bg">
+                    GO SPORTS
+                </div>
+
+                <div class="package">
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>4 Free Service</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>2 Oil Free</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>10% Discount on Labour</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>Free Pick & Drop</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>Insurance Support</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>Roadside Assistance</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>Accident support & insurance</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>All the package price is inclusive of tax</span>
+                    </div>
+                </div>
+
+                <div class="total__price flex">
+
+                    <img src="./assets/images/rupee copy.png" alt="">
+                    <p>2499.00</p>
+                </div>
+
+                <a href="#" class="buy__button">Buy Now</a>
+
+                <span class="condition">Teram & Conditions</span>
+            </div>
+
+            <div class="price__box">
+                <div class="price__header bg__two">
+                    GO ROYAL
+                </div>
+
+                <div class="package">
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>4 Free Service</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>2 Oil Free</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>2 Oil Filter</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>Free Pick & Drop</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>Insurance Support</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>Roadside Assistance</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>Accident support & insurance</span>
+                    </div>
+                    <div class="price__row flex">
+                        <img src="./assets/images/price_circle.png" alt="">
+                        <span>All the package price is inclusive of tax</span>
+                    </div>
+                </div>
+
+                <div class="total__price flex">
+
+                    <img src="./assets/images/rupee copy.png" alt="">
+                    <p>1299.00</p>
+                </div>
+
+                <a href="#" class="buy__button">Buy Now</a>
+
+                <span class="condition">Teram & Conditions</span>
             </div>
         </div>
 
@@ -593,51 +613,73 @@
             <div class="brand__flex flex">
                 <div class="brand__left">
                     <div class="row flex">
-                        <div class="brand__img">
-                            <img src="./assets/images/ktm.png" alt="">
+                        <div class="bg__box right-border">
+                            <div class="brand__img">
+                                <img src="./assets/images/ktm.png" alt="">
+                            </div>
                         </div>
-                        <div class="brand__img">
-                            <img src="./assets/images/vespa.png" alt="">
+                        <div class="bg__box right-border">
+                            <div class="brand__img">
+                                <img src="./assets/images/vespa.png" alt="">
+                            </div>
                         </div>
-                        <div class="brand__img">
-                            <img src="./assets/images/lml.png" alt="">
+                        <div class="bg__box right-border">
+                            <div class="brand__img">
+                                <img src="./assets/images/lml.png" alt="">
+                            </div>
                         </div>
-                        <div class="brand__img">
-                            <img src="./assets/images/hero.png" alt="">
-                        </div>
-                    </div>
-                    <div class="row flex">
-                        <div class="brand__img">
-                            <img src="./assets/images/yamaha.png" alt="">
-                        </div>
-                        <div class="brand__img">
-                            <img src="./assets/images/honda.png" alt="">
-                        </div>
-                        <div class="brand__img">
-                            <img src="./assets/images/royal-enfield.png" alt="">
-                        </div>
-                        <div class="brand__img">
-                            <img src="./assets/images/bajaj.png" alt="">
+                        <div class="bg__box right-border">
+                            <div class="brand__img">
+                                <img src="./assets/images/hero.png" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="row flex">
-                        <div class="brand__img">
-                            <span></span>
-                            <img src="./assets/images/tvs.png" alt="">
+                        <div class="bg__box right-border">
+                            <div class="brand__img">
+                                <img src="./assets/images/yamaha.png" alt="">
+                            </div>
                         </div>
-                        <div class="brand__img">
-                            <span></span>
-                            <img src="./assets/images/suzuki.jpg" alt="">
+                        <div class="bg__box right-border">
+                            <div class="brand__img">
+                                <img src="./assets/images/honda.png" alt="">
+                            </div>
                         </div>
-                        <div class="brand__img">
-                            <span></span>
-                            <img src="./assets/images/mahindra.png" alt="">
+                        <div class="bg__box right-border">
+                            <div class="brand__img">
+                                <img src="./assets/images/royal-enfield.png" alt="">
+                            </div>
                         </div>
-                        <div class="brand__img">
-                            <span></span>
-                            <img src="./assets/images/vespa.png" alt="">
+                        <div class="bg__box right-border">
+                            <div class="brand__img">
+                                <img src="./assets/images/bajaj.png" alt="">
+                            </div>
                         </div>
                     </div>
+                    <div class="row flex">
+                        <div class="bg__box right-border">
+                            <div class="brand__img">
+                                <img src="./assets/images/tvs.png" alt="">
+                            </div>
+                        </div>
+                        <div class="bg__box right-border">
+                            <div class="brand__img">
+                                <img src="./assets/images/suzuki.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="bg__box right-border">
+                            <div class="brand__img">
+                                <img src="./assets/images/mahindra.png" alt="">
+                            </div>
+                        </div>
+                        <div class="bg__box right-border">
+                            <div class="brand__img">
+                                <img src="./assets/images/vespa.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div class="brand__right">
                     <div class="circle__img">
@@ -664,9 +706,6 @@
                     to provide our customer top-class services at best rates</p>
             </div>
 
-            <div class="testimonial__area">
-
-            </div>
         </div>
     </section>
     <!-- =====================END OUR CUSTOMER========================= -->
@@ -675,13 +714,91 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        delay: 400,
+      });
+
+    </script>
     <script>
         $('.slider').slick({
             dots: true,
             vertical: true,
             draggable: true,
+            // autoplay: true,
+            // autoplaySpeed: 3000,
+            cssEase: 'ease',
+            mobileFirst: true,
+            swipe: true,
+            touchMove: true,
         });
-    </script>
-</body>
 
+
+    </script>
+    
+
+</body>
+  
 </html>
+
+<!-- <div class="booking__flex flex">
+    <div class="booking__box">
+        <div class="icons__circle">
+            <div class="dotted__arrow">
+                <img src="./assets/images/arrow-shap.png" alt="">
+            </div>
+            <div class="arrow">
+                <img src="./assets/images/down-arrow (2) copy.png" alt="">
+            </div>
+            <div class="badge">
+                1
+            </div>
+            <div class="box__icon">
+                <img src="./assets/images/login (1).png" alt="">
+            </div>
+        </div>
+        <div class="booking__text">
+            <h4>Login / RegistrationIpsum</h4>
+            <p>Customer can easily <br>
+                via mobile application.</p>
+        </div>
+    </div>
+    <div class="booking__box">
+        <div class="icons__circle">
+            <div class="dotted__arrow__two">
+                <img src="./assets/images/arrow-shap.png" alt="">
+            </div>
+            <div class="arrow__two">
+                <img src="./assets/images/down-arrow (2) copy.png" alt="">
+            </div>
+            <div class="badge">
+                2
+            </div>
+            <div class="box__icon">
+                <img src="./assets/images/find.png" alt="">
+            </div>
+        </div>
+        <div class="booking__text">
+            <h4>Select Nearest Franchise</h4>
+            <p>Find nearest <br>
+                Franchise.</p>
+        </div>
+    </div>
+    <div class="booking__box">
+        <div class="icons__circle">
+            <div class="badge">
+                3
+            </div>
+            <div class="box__icon">
+                <img src="./assets/images/booking-online.png" alt="">
+            </div>
+        </div>
+        <div class="booking__text">
+            <h4>Book your service</h4>
+            <p>Click to book your <br>
+                vehicle service.</p>
+        </div>
+    </div> -->

@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@font-face {
+    font-family: 'Autography' ;
+    src: url('Autography.ttf');
+}
 /*=============== VARIABLES CSS ===============*/
 :root {
     --header-height: 3rem;
@@ -72,6 +75,7 @@
   
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     font-family: var(--body-font);
@@ -148,7 +152,7 @@ input {
 .mechanic__icon{
     width: 45%;
     justify-content: flex-start;
-
+    margin-left: -4rem;
 }  
 
 .man__img{
@@ -191,14 +195,14 @@ input {
     position: relative;
 }
 .nav__item{
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 
 .nav__list span{
     width: 1px;
     height: 26px;
     background-color: var(--black-color);
-    margin-left: 3rem;
+    margin-left: 2rem;
     opacity: 30%;
 }
 
@@ -245,7 +249,7 @@ input {
 .nav__toggle{
     display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 967px) {
     .nav__menu {
       position: fixed;
       background-color: var(--body-bg);
@@ -321,17 +325,17 @@ input {
     overflow: hidden;
 }
 .slider{
-    width: 100%;
+    width: 100vw;
 }
 .slider .item{
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
+    height: 83vh;
     overflow: hidden;
     position: relative;
 }
 .slider .item__image{
-    width: 100vw;
-    height: 80vh;
+    width: 100%;
+    height: 100%;
     background-image: url(../images/Clip.png);
     background-color: var(--black-color);
     background-size: cover;
@@ -341,44 +345,79 @@ input {
 }
 .caption{
     position: absolute;
-    top: 180px;
-    right: 150px;
-    float: right;
+    top: 80px;
+    right: 280px;
     color: var(--white-color);
+}
+.slick-dots{
+    width: 100px;
+    position: absolute;
+    top: 180px;
+    right: -10px;
+}
+.slick-dots li {
+    width: 60px;
+    height: 5px;
+    background-color: var(--white-color);
+    border-radius: 4rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+}
+.slick-dots li:nth-child(1),
+.slick-dots li:nth-child(3){
+    margin-left: 1rem;
+    width: 25px;
+}
+.slick-vertical .slick-slide{
+    border: none;
+}
+
+.slick-dots li button {
+    display: none;
+}
+.slider .slick-active{
+    background-color: var(--first-color);
+}
+.slider .slick-active::before{
+    content: "";
+    width: 100px;
+}
+.slider .slick-active::after{
+    width: 100%;
+}
+.caption::before{
+    content: attr(data-count);
+    position: absolute;
+    right: -190px;
+    top: 123px;
+    font-size: 1.25rem;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
 }
 /* ====================END SLICK BANNER SLIDER=============
 
 
 /*=========================HERO SECTION==================*/
 
-.main{
-    width: 100%;
-    height: 90vh;
-    background-image: url(../images/Clip.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: var(--black-color);
-    overflow: hidden;
-    position: relative;
-}
 .main__text{
-    width: 80%;
-    transform: translateX(65%);
-    position: relative;
-    top: 150px;
+    width: 100%;
     font-size: var(--h1-font-size);
 }
 .italic__text{
-    font-style: italic;
+    font-family: 'Autography';
     color: var(--first-color);
+    font-size: var(--biggest-font-size);
     font-weight: var(--font-low);
+    letter-spacing: 2px;
 }
 .main__text .heading{
     color: var(--white-color);
-    font-weight: var(--font-low);
+    font-weight: var(--font-semi-bold);
 }
-.main__text .heading span{
+.main__text .heading  .bold{
     color: var(--first-color);
+    font-weight: 900;
 }
 .main__text .subtitle{
     color: var(--white-color);
@@ -386,57 +425,20 @@ input {
 }
 .main__text .book__now{
     color: var(--first-color);
-    font-size: var(--small-font-size);
+    font-size: var(--normal-font-size);
     border: 1px solid var(--first-color);
-    padding: .5rem 1rem;
+    padding: .8rem 1rem;
+    width: 140px;
+    text-align: center;
     display: inline-block;
     margin-top: var(--mb-1);
     border-radius: .5rem;
     text-transform: capitalize;
+    transition: all .3s ease;
 }
-.indicator{
-    width: 130px;
-    position: absolute;
-    bottom: 300px;
-    right: 10px;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.indicator .bar{
-    width: 20px;
-    border-radius: 2rem;
-    height: 4px ;
-    margin-bottom: 2rem;
-    background-color: var(--white-color);
+.main__text .book__now:hover{
+    background-color: var(--first-alt-color);
     color: var(--white-color);
-    position: relative;
-    cursor: pointer;
-}
-.indicator .bar:nth-child(2){
-    width: 50px;
-    background-color: var(--first-color);
-    color: var(--first-color);
-}
-.indicator .bar:nth-child(1):before{
-    content: "1";
-    position: absolute;
-    top: -5px;
-    left: 0;
-    transform: translateX(-20px);
-}
-.indicator .bar:nth-child(2):before{
-    content: "2";
-    position: absolute;
-    top: -5px;
-    left: 0;
-    transform: translateX(-20px);
-}
-.indicator .bar:nth-child(3):before{
-    content: "3";
-    position: absolute;
-    top: -5px;
-    left: 0;
-    transform: translateX(-20px);
 }
 
 /*=========================HERO END=================*/
@@ -486,6 +488,7 @@ input {
 .sub__heading span{
     color: var(--first-color);
     font-weight: var(--font-semi-bold);
+    word-break: keep-all;
 }
 .booking__inner{
     position: relative;
@@ -496,75 +499,9 @@ input {
     left: 0;
 }
 
-.booking__box{
-    width: 32%;
-    text-align: center;
-}
-.icons__circle{
-    width: 110px;
-    height: 110px;
-    background-color: var(--circle-bg);
-    border-radius: 100%;
-    position: relative;
-    margin: auto;
-}
-.icons__circle::after{
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    top: -5px;
-    left: -6px;
-    border-radius: 100%;
-    border: 1px dashed var(--black-color);
-}
-.badge{
-    width: 25px;
-    height: 25px;
-    background-color: var(--first-color);
-    border-radius: 100%;
-    position: absolute;
-    top: -15px;
-    font-size: var(--smaller-font-size);
-    left: 40px;
-    padding: .3rem;
-    z-index: 1000;
-}
 
-.dotted__arrow {
-    position: absolute;
-    width: 485px;
-    top: -35px;
-    left: -20px;
-    transform: rotate(359deg);
-}
-.arrow {
-    width: 30px;
-    position: absolute;
-    top: -13px;
-    right: -200px;
-    transform: rotate(52deg);
-}
-.dotted__arrow__two {
-    position: absolute;
-    width: 493px;
-    top: -29px;
-    left: 18px;
-    transform: rotate(330deg);
-}
-.arrow__two {
-    width: 30px;
-    position: absolute;
-    top: -37px;
-    right: -247px;
-    transform: rotate(30deg);
-}
-.booking__flex{
-    padding: 5% 0;
-}
-.box__icon img{
-    margin-top: 2rem;
-}
+
+
 .booking__text{
     margin-top: var(--mb-1);
 }
@@ -574,6 +511,14 @@ input {
 }
 .booking__text p{
     font-size: var(--normal-font-size);
+}
+.booking__banner{
+    width: 80%;
+    margin: auto;
+}
+.three__col{
+    display: grid;
+    grid-template-columns: repeat(3, 100fr);
 }
 /*=========================BOOKING END=================*/
 
@@ -599,24 +544,8 @@ input {
     right: 0;
     top: 100px;
 }
-.service__flex{
-    flex-wrap: wrap;
-}
 
-.service__icon{
-    width: 80px;
-    height: 80px;
-    background-color: var(--first-color);
-    border-radius: 100%;
-    margin: auto;
-    margin-bottom: var(--mb-0-75);
-}
-.service__wrapper{
-    width: 25%;
-    border-right: 1px solid var(--input-border);
-    padding: 0;
-    margin-bottom: var(--mb-1-25);
-}
+
 
 .service__wrapper:nth-child(4){
     border: none;
@@ -630,41 +559,63 @@ input {
     width: 150px;
     right: -85px;
 }
-.service__box p{
-    font-weight: var(--font-medium);
+
+
+
+
+.service__card{
+    width: 30%;
+    background-color: var(--white-color);
+    border-radius: .5rem;
+    margin-bottom: var(--mb-2);
+    box-shadow: 0px -2px 13px rgba(8, 10, 10, 0.2);
 }
-.row__two{
-    justify-content: flex-start;
+.service__image{
     width: 100%;
-}
-.row__two .service__wrapper:nth-child(3){
-    border: none;
-}
-.row__three{
-    justify-content: flex-start;
-    width: 100%;
-}
-.row__three .service__wrapper:nth-child(2){
-    border: none;
+    height: 180px;
+    background-image: url(../images/bikerepair1.jpg);
+    background-size: cover;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem
 }
 
-.bike{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-.ktm__bg{
-    width: 340px;
-    height: 300px;
-    position: absolute;
-    background-image: url(../images/ktm-bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    right: 0;
-    bottom: -30px;
-}
-.ktm__bg img{
+
+.service__card .card__icon img{
     width: 100%;
+    padding: .2rem;
+}
+.service__card .card__text{
+    position: relative;
+    padding: 1rem;
+}
+.service__card .card__icon{
+    width: 50px;
+    background-color: var(--first-color);
+    border-radius: .3rem;
+    position: absolute;
+    top: -40px;
+    right: 20px;
+}
+.card__text{
+    text-transform: capitalize;
+    text-align: left;
+}
+.card__text h3{
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+}
+.card__text p,
+.serv__flex{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    line-height: 24px;
+}
+.serv__flex{
+    color: var(--first-color);
+    margin: .2rem 0;
+}
+.serv__flex .ri-add-line{
+    color: var(--black-color);
 }
 /*=========================SERVICES  END=================*/
 
@@ -674,6 +625,13 @@ input {
     width: 100%;
     position: relative;
     overflow: hidden;
+    padding: 3% 0;
+}
+.pricing__wrapper{
+    max-width: 95%;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .annual__sqr{
     width: 150px;
@@ -689,7 +647,6 @@ input {
     transform: rotate(-180deg);
 }
 .anual__conatiner{
-    padding: 3% 0;
     text-align: center;
     position: relative;
 }
@@ -739,6 +696,8 @@ input {
     margin-left: .8rem;
     display: inline-block;
     word-break: break-all;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
 }
 .total__price{
     width: 95%;
@@ -770,6 +729,7 @@ input {
     margin: .4rem;
     padding: .4rem 0;
     line-height: 26px;
+    text-align: center;
 }
 
 .condition{
@@ -852,10 +812,18 @@ input {
 
 .brand__img{
     width: 80px;
+    position: relative;
+    top: 25px;
+}
+.bg__box{
+    width: 20%;
+    min-height: 100px;
+    border-right: 1px solid var(--circle-bg);
 }
 
 .brand__img img{
     width: 100%;
+    padding: .8rem;
 }
 .brand__right{
     width: 40%;
@@ -873,6 +841,15 @@ input {
 /* ==========================CUSTOMER SECTION========================= */
 .customer__inner{
     text-align: center;
+}
+.testimonial__slider{
+    width: 100%;
+}
+.item__image{
+    width: 20%;
+}
+.carousel .item{
+    width: 30%;
 }
 /* ==========================END CUSTOMER SECTION========================= */
 
@@ -912,19 +889,69 @@ input {
 
 
 @media screen and (max-width: 980px) {
-    .pricing__wrapper {
-        flex-wrap: wrap;
-    }
+
     .price__box{
-        width: 45%;
+        width: 48%;
         margin-bottom: var(--mb-1);
     }
-    .service__flex{
-        
-    }
+
 }
 @media screen and (max-width: 768px) {
+    .main__text{
+        width: 100%;
+    }
+    .inner__text h1{
+        word-break: break-all;
+    }
+    .slider .item__image{
+        max-height: max-content;
+    }
+    .booking__text h4{
+        font-size: var(--small-font-size);
+    }
+    .booking__text p{
+        font-size: var(--smaller-font-size);
+    }
+    .brand__flex{
+        flex-direction: column;
+    }
+    .brand__left{
+        width: 100%;
+    }
+    .brand__right{
+        width: 50%;
+        margin: 1rem auto;
+    }
+    .brand__left .row{
+        margin: 2.4rem 0;
+    }
+    .services__wraper{
+        align-items: baseline;
+    }
+    .service__card{
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .three__col{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        align-items: center;
+    }
     .price__box{
+        width: 90%;
+        margin: auto;
+    }
+    .service__card{
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service__card{
         width: 100%;
     }
 }
