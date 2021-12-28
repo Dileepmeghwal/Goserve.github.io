@@ -657,7 +657,7 @@ input {
 .annual__sqr{
     width: 150px;
     position: absolute;
-    left: -80px;
+    left: -85px;
     top: 100px;
 }
 .annual__shade{
@@ -866,6 +866,12 @@ input {
     padding: 5% 0;
     background-color: var(--circle-bg);
 }
+.t-squre{
+    width: 150px;
+    position: absolute;
+    right: -85px;
+    bottom: 100px;
+}
 .customer__inner{
     text-align: center;
     position: relative;
@@ -927,6 +933,10 @@ input {
 .next span:hover{
     background-color: var(--first-alt-color);
     padding: .4rem;
+}
+.user__name h3{
+    color: var(--first-alt-color);
+    padding: var(--mb-1) 0;
 }
 
 /* ==========================END CUSTOMER SECTION========================= */
@@ -1059,6 +1069,7 @@ footer{
     max-width: 95%;
     margin: auto;
     text-transform: capitalize;
+    overflow: hidden;
 }
 .left{
     width: 45%;
@@ -1074,7 +1085,7 @@ footer{
     border-radius: .5rem;
 }
 .left .over__video{
-    width: 250px;
+    width: 200px;
     position: absolute;
     right: -50px;
     bottom: -10px;
@@ -1159,7 +1170,7 @@ footer{
 .sqr{
     width: 150px;
     position: absolute;
-    right: -80px;
+    right: -85px;
     bottom: 30px;
 }
 .mission__inner{
@@ -1177,10 +1188,6 @@ footer{
     right: 50px;
     top: 10px;
 }
-.visionBox{
-    width: 400px;
-    margin: auto;
-}
 .visionBox p{
     line-height: 24px;
 }
@@ -1191,6 +1198,7 @@ footer{
     display: inline-block;
     border: 1px solid var(--black-color);
 }
+
 /* =====================END OUR MISSION===================== */
 
 
@@ -1377,39 +1385,109 @@ textarea{
     border-radius: .5rem;
 }
 
-/* =======================END CONTACT US============================ */
 
-.swiper {
+/* ==============LOCATION SECTION================= */
+.location__section{
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 5 0px;
+    padding: 5% 0;
+    overflow: hidden;
+    position: relative;
 }
-
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 400px;
-    height: 353px;
+.location__section .l-dots{
+    width: 250px;
+    position: absolute;
+    left: -210px;
+    top: 280px;
 }
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-}
-.swiper-slide .t-text p{
-    font-size: var(--small-font-size);
-}  
-.t-image{
-    width: 100px;
-    height: 100px;
+.location-inside{
+    max-width: 95%;
     margin: auto;
-    margin-top: 2rem;
 }
-.swiper-3d .swiper-slide-shadow-left,
-.swiper-3d .swiper-slide-shadow-right{
-    background-image: none;
+.location-inside .left .row{
+    padding: var(--mb-1);
+}
+.location-inside .left .row h3{
+    color: var(--first-alt-color);
+    margin-bottom: var(--mb-0-25);
+    text-transform: capitalize;
+}
+.location-inside .left .row span{
+    color: var(--first-alt-color);
+    margin-right: var(--mb-0-25);
+    font-size: var(--h2-font-size);
+}
+.location-inside .left .row p{
+    margin-bottom: var(--mb-0-25);
+}
+.location-inside .left .row  a{
+    color: var(--black-color);
+}
+.goserve__map iframe{
+    width: 100%;
+}
+.location-inside .left {
+    position: relative;
+}
+.location-inside .left .l-vector{
+    width: 10px;
+    position: absolute;
+    right: 0;
 }
 
+/* ==============END LOCATION SECTION================= */
+
+/* ========================   OUR FRANCISE===================== */
+.our__francise{
+    max-width: 95%;
+    margin: auto;
+}
+.inner__francise{
+    text-align: center;
+}
+.francise__wrapper{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+.our__francise .f-box{
+    border: 1px solid var(--black-color);
+    padding: 1rem;
+    margin-bottom: var(--mb-1-25);
+    position: relative;
+    overflow: hidden;
+}
+.our__francise .f-dots{
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.our__francise .f-box a h3{
+    color: var(--first-alt-color);
+}
+.our__francise .f-box .row h3{
+    color: var(--first-alt-color);
+}
+.our__francise .f-box a{
+    color: var(--black-color);
+}
+.our__francise .f-box .row span{
+    color: var(--first-alt-color);
+    font-size: var(--h3-font-size);
+}
+
+.our__francise .f-box p,
+.our__francise .row{
+    padding: var(--mb-0-25) 0;
+}
+
+
+
+
+/* ========================END   OUR FRANCISE===================== */
+/* =======================END CONTACT US============================ */
 
 @media screen and (max-width: 980px) {
 
@@ -1466,9 +1544,6 @@ textarea{
     }
     .title h3{
         transform: translateY(-40px);
-    }
-    .slider .item__image{
-        max-height: max-content;
     }
     .booking__text h4{
         font-size: var(--small-font-size);
@@ -1529,6 +1604,42 @@ textarea{
 }
 
 @media screen and (max-width: 580px) {
+
+    .slider .item__image{
+        width: 100%;
+        height: 80vh;
+    }
+    .header__icons span{
+        font-size: var(--small-font-size);
+    }
+    .mechanic__icon{
+        width: 45%;
+        justify-content: flex-start;
+        margin-left: -4rem;
+    }  
+    .header__footer{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .francise__wrapper{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    .man__img{
+        width: 15px;
+        margin-right: var(--mb-0-75);
+    }
+    .man__img img{
+        width: 100%;
+    }
+    .mechanic__icon p{
+        color: var(--white-color);
+        font-size: var(--smaller-font-size);
+    }
+    .nav__logo{
+        width: 50px;
+    }
     .three__col{
         display: flex;
         flex-direction: column;
@@ -1538,15 +1649,15 @@ textarea{
     }
     .caption {
         width: 90%;
-        top: 180px;
+        top: 100px;
         right: 20px;
     }
     .italic__text{
         font-family: 'Autography';
-        font-size: var(--biggest-font-size);
+        font-size: var(--h1-font-size);
     }
     .main__text .heading{
-        font-size: var(--biggest-font-size);
+        font-size: var(--h1-font-size);
     }
     .main__text .heading  .bold{
         font-weight: 900;
@@ -1554,6 +1665,20 @@ textarea{
     .main__text .subtitle{
         color: var(--white-color);
         font-size: var(--small-font-size);
+    }
+    
+    .slick-dots {
+        width: 60px;
+        position: absolute;
+        top: 35%;
+        right: 0%;
+    }
+    .slick-dots li{
+        margin-bottom: 0;
+    }
+    .main__text .book__now{
+        padding: .5rem;
+        width: 100px;
     }
     .price__box{
         width: 90%;
@@ -1619,7 +1744,15 @@ textarea{
     .t-slider{
         width: 80%;
     }
-    
+
+    /* ==============ABOUT============== */
+    .dots{
+        width: 150px;
+        right: -95px;
+    }
+    .inside .box{
+        word-break:keep-all;
+    }
 
 }
 
@@ -1663,5 +1796,20 @@ textarea{
     .right-img{
         width: 50px;
     }
+    .number__count .inside .number{
+        border: none;
+    }
+    .number__count .inside{
+        justify-content: space-between;
+    }
+    .mission__inner .left{
+        width: 100%;
+    }
     
+
+    /* ================ABOUT============= */
+    .side__squre{
+        width: 120px;
+        right: -85px;
+    }
 }
