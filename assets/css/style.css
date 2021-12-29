@@ -324,12 +324,12 @@ input {
 /* ====================SLICK BANNER SLIDER============= */
 .slider__wrap{
     width: 100%;
-    /* height: 100vh; */
     overflow: hidden;
 }
 
 .slider .item{
     width: 100%;
+    height: 100vh;
     overflow: hidden;
     position: relative;
 }
@@ -1634,6 +1634,12 @@ textarea{
 }
 
 @media screen and (max-width: 580px) {
+    .slider .item__image{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../images/Clip.png);
+        background-size: cover;
+    }
     .steps{
         font-size: 2rem !important;
     }
