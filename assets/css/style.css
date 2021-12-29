@@ -150,9 +150,12 @@ input {
     color: var(--white-color);
     font-size: var(--h2-font-size);
     padding: 0 var(--mb-0-25);
+    transition: .3s;
 }
 
-
+.header__icons span:hover{
+    color: var(--first-alt-color);
+}
 .man__img{
     width: 18px;
 }
@@ -161,6 +164,13 @@ input {
     position: relative;
     top: 2px;
     right: -10px;
+    transition: .3s;
+}
+.man__img span:hover{
+    display: inline-block;
+    transform: rotate(25deg);
+    color: var(--first-alt-color);
+    font-size: var(--h1-font-size);
 }
 .mechanic__icon p{
     color: var(--white-color);
@@ -197,6 +207,7 @@ input {
 .nav__item{
     margin-left: 1rem;
 }
+
 
 .nav__list span{
     width: 1px;
@@ -316,6 +327,9 @@ input {
     height: 2px;
     bottom: -.75rem;
     left: 0;
+}
+.nav__item .nav__link:hover{
+    color: var(--first-alt-color);
 }
         
 
@@ -1012,8 +1026,11 @@ footer{
 .footer__box p{
     line-height: 24px;
 }
-.footer__link a::before,
-.footer__box p::before{
+.footer__box span{
+    color: var(--first-alt-color);
+    margin-right: var(--mb-0-5);
+}
+.footer__link a::before{
     content: "";
     position: absolute;
     top: 5px;
@@ -1022,6 +1039,11 @@ footer{
     height: 4px;
     border: 1px solid var(--first-alt-color);
     border-radius: 100%;
+}
+.ri-mail-fill:before {
+    content: "\eef3";
+    position: relative;
+    top: 5px;
 }
 .quik__link{
     margin: var(--mb-1) 0;
@@ -1033,6 +1055,9 @@ footer{
     color: var(--white-color);
     display: inline-block;
     margin-top: var(--mb-0-75) --mb-0-5;
+}
+.footer__link li a:hover{
+    color: var(--first-alt-color);
 }
 .mail__link{
     color: var(--small-text);
