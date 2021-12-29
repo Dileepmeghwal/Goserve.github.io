@@ -272,6 +272,7 @@ input {
       padding: 3rem;
       transition: .4s;
       z-index: 100;
+      text-align: left;
     }
     .nav__close,
     .nav__toggle{
@@ -283,9 +284,10 @@ input {
         flex-direction: column;
         row-gap: 2.5rem;
   }
-  .nav__list span{
-    display: none;
-}
+    .nav__list span{
+        display: none;
+    }
+
 }
 
 .nav__link {
@@ -331,8 +333,41 @@ input {
 .nav__item .nav__link:hover{
     color: var(--first-alt-color);
 }
-        
-
+.dropbtn{
+    text-transform: capitalize;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+    
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--body-color);
+    min-width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+.dropdown-content a {
+    color: var(--black-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: var(--normal-font-size);
+    text-align: left;
+    transition: .30s;
+    border-bottom: 1px solid var(--input-border);
+}
+.dropdown-content a:hover {
+      color: var(--first-alt-color);
+    }
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 /* ====================SLICK BANNER SLIDER============= */
 .slider__wrap{
     width: 100%;
