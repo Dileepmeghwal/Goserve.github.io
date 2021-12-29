@@ -151,18 +151,16 @@ input {
     font-size: var(--h2-font-size);
     padding: 0 var(--mb-0-25);
 }
-.mechanic__icon{
-    width: 45%;
-    justify-content: flex-start;
-    margin-left: -4rem;
-}  
+
 
 .man__img{
     width: 18px;
-    margin-right: var(--mb-0-75);
 }
-.man__img img{
-    width: 100%;
+.man__img span{
+    color: var(--white-color);
+    position: relative;
+    top: 2px;
+    right: -10px;
 }
 .mechanic__icon p{
     color: var(--white-color);
