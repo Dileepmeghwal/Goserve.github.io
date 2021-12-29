@@ -324,24 +324,23 @@ input {
 /* ====================SLICK BANNER SLIDER============= */
 .slider__wrap{
     width: 100%;
+    /* height: 100vh; */
     overflow: hidden;
 }
 
 .slider .item{
     width: 100%;
-    height: 80vh;
     overflow: hidden;
     position: relative;
 }
 .slider .item__image{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: url(../images/Clip.png);
-    background-color: var(--black-color);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    float: left;
+    background-position: 100% 100%;
+    background-color: var(--black-color);
 }
 .caption{
     width: 60%;
@@ -355,7 +354,7 @@ input {
     width: 100px;
     position: absolute;
     top: 45%;
-    right: 0%;
+    right: 1%;
 }
 .slick-dots li {
     width: 60px;
@@ -380,9 +379,7 @@ input {
 .slick-dots li button {
     display: none;
 }
-.slider .slick-active{
-    background-color: var(--first-color);
-}
+
 
 .slick-dots li ::before{
     content: attr(data-count);
@@ -826,7 +823,7 @@ input {
     top: 50px;
 }
 .bike__row{
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .bike__bx{
     max-width: 24%;
@@ -1215,6 +1212,8 @@ footer{
     background-image: url(../images/bike-service-at-home_1570911008.png);
     background-size: cover;
     overflow: hidden;
+    position: relative;
+    right: -50px;
 }
 .bike__service{
     width: 100%;
@@ -1234,6 +1233,15 @@ footer{
 .bike__service .box{
     width: 30%;
     margin-bottom: var(--mb-1-25);
+    position: relative;
+}
+.vr-line{
+    width: 1px;
+    height: 55px;
+    background-color: var(--black-color);
+    position: absolute;
+    right: 50px;
+    top: 3px;
 }
 .bike__service .box p{
     padding: var(--mb-0-25) 0;
@@ -1506,6 +1514,14 @@ textarea{
         width: 120px;
         top: 100px;
     }
+    .bike__wrapper .left{
+        width: 100%;
+    }
+    .bike__wrapper .right{
+        width: 50%;
+        margin: auto;
+        padding: 2rem;
+    }
 
 }
 @media screen and (max-width: 768px) {
@@ -1601,13 +1617,68 @@ textarea{
     .next{
         top: 126px;
     }
+    .search{
+        width: 150px;
+    }
+    .input__box input{
+        width: 80%;
+    }
+    .search__icon span{
+        color: var(--white-color);
+        position: relative;
+        top: 6px;
+        left: 10px;
+    }
+    
+
 }
 
 @media screen and (max-width: 580px) {
-
+    .steps{
+        font-size: 2rem !important;
+    }
+    .move{
+        transform: translateY(-35px) !important;
+        font-size: var(--h1-font-size);
+    }
     .slider .item__image{
         width: 100%;
         height: 80vh;
+    }
+    .circle{
+        width: 65px;
+        right: -50px;
+    }
+    .small__vector {
+        width: 5px;
+        position: absolute;
+        left: 0;
+        top: 100px;
+    }
+    .small__vector__two {
+        width: 5px;
+    }
+    .anual__left,
+    .anual__right {
+        width: 5px;
+    }
+    .annual__sqr {
+        width: 100px;
+        left: -55px;
+    }
+    .t-squre {
+        width: 100px;
+        position: absolute;
+        right: -55px;
+    }
+    .sqr{
+        width: 120px;
+    }
+    .vr-line{
+        display: none;
+    }
+    html{
+        font-size: 14px;
     }
     .header__icons span{
         font-size: var(--small-font-size);
@@ -1702,7 +1773,7 @@ textarea{
     .left,
     .right{
         width: 100%;
-        margin: var(--mb-1);
+        margin: var(--mb-1) 0;
     }
     .inside .box{
         width: 45%;
@@ -1752,6 +1823,10 @@ textarea{
     }
     .inside .box{
         word-break:keep-all;
+    }
+    .line{
+        width: 0;
+        border: none;
     }
 
 }
@@ -1811,5 +1886,19 @@ textarea{
     .side__squre{
         width: 120px;
         right: -85px;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 360px) {
+    .smaller{
+        font-size: 1.5rem !important;
+    }
+    .down{
+        transform: translateY(-25px) !important;
     }
 }
