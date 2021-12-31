@@ -1,9 +1,4 @@
-$('.nav__list').click(function() {
 
-    //console.log("Clicked");
-    $('.nav__list nav__link.active').removeClass('active');
-    $(this).addClass('active');
-});
 
 /*==================== SHOW MENU ====================*/
 const navMenu = document.getElementById('nav-menu'),
@@ -35,4 +30,5 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
 
