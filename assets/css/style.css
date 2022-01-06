@@ -1456,6 +1456,19 @@ footer{
     min-height: 60vh;
     z-index: 88;
 }
+.services__wrap span{
+    color: var(--first-alt-color);
+    position: relative;
+    top: 2px;
+}
+.services__wrap span::after{
+    content: "";
+    margin-right: .5rem;
+    color: var(--first-alt-color);
+}
+.services__wrap .pop-up .footer__box a{
+    color: var(--black-color);
+}
 
 .services__content img{
     width: 100%;
@@ -1480,6 +1493,9 @@ footer{
 .service__details p{
     line-height: 24px;
     margin-bottom: var(--mb-1);
+}
+.services__wrap .pop-up .footer__box p{
+    color: var(--black-color);
 }
 .service__flex__detail{
     display: grid;
@@ -2058,6 +2074,10 @@ textarea{
     .line{
         width: 0;
         border: none;
+    }
+    .title__text {
+        transform: translateY(40px);
+        padding: 10% 0;
     }
 
 }
