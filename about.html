@@ -53,77 +53,57 @@
         </div>
 
     </div>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav__logo">
-                <a href="index.html" class="">
-                    <img src="./assets/images/logo.png" alt="">
-                </a>
-            </div>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list" id="navMenu">
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link active">Home</a>
-                    </li>
-                    <span></span>
-                    <li class="nav__item">
-                        <a href="about.html" class="nav__link">About Us</a>
-                    </li>
-                    <span></span>
-                    <li class="nav__item">
-                        <div class="dropdown">
-                            <button class="dropbtn">our franchises</button>
-                            <div class="dropdown-content">
-                              <a href="#">Goserve Ghatlodiya</a>
-                              <a href="#">Shree Enterprises Gota</a>
-                              <a href="#">Goserve Naranpura</a>
-                              <a href="#">Goserve Satadhar</a>
-                              <a href="#">SRP Motorworks</a>
-                              <a href="#">Jain Auto Service</a>
-                            </div>
-                          </div>
-                    </li>
-                    <span></span>
-                    <li class="nav__item">
-                        <div class="dropdown">
-                            <a href="service.html">
-                                <button class="dropbtn">Services</button>
-                            </a>
-                            <div class="dropdown-content">
-                              <a href="service.html">Periodic Service</a>
-                              <a href="#">Two Wheeler RSA</a>
-                              <a href="#">Four Wheeler RSA</a>
-                              <a href="#">Insurance</a>
-                            </div>
-                          </div>
-                    </li>
-                    <span></span>
-                    <li class="nav__item">
-                        <a href="contact.html" class="nav__link">Contact Us</a>
-                    </li>
-                    <span></span>
-                </ul>
-
-                <i class="ri-close-line nav__close" id="nav-close"></i>
-            </div>
-
-            <!-- <div class="search__box">
-                <div class="search">
-                    <div class="input__box">
-                        <input type="search" placeholder="Search" name="" id="">
+        <!--================ HEADER========================== -->
+        <header class="header">
+            <div class="container">
+                <div class="header-main">
+                    <div class="logo">
+                        <img src="./assets/images/logo.png" alt="">
                     </div>
-                    <div class="search__icon">
-                        <span class="ri-search-line"></span>
+                    <div class="open-nav-menu">
+                        <span></span>
                     </div>
+                    <div class="menu-overlay">
+    
+                    </div>
+                    <!-- navgation menu -->
+                    <nav class="nav-menu">
+                        <div class="close-nav-menu">
+                            <span class="ri-close-fill"></span>
+                        </div>
+                        <ul class="menu">
+                           <li class="menu-item">
+                               <a href="index.html">Home</a>
+                           </li>
+                           
+                           <li class="menu-item">
+                               <a href="about.html">About Us</a>
+                           </li>
+                           <li class="menu-item menu-item-has-childern">
+                               <a href="#" data-toggle="sub-menu">Services <span class="ri-arrow-down-s-line ceret"></span></a>
+                               <ul class="sub-menu">
+                                   <li class="menu-item">
+                                       <a href="service.html">Periodic Services</a>
+                                   </li>
+                                   <li class="menu-item">
+                                       <a href="#periodic-service">Two-Wheeler Break Down</a>
+                                   </li>
+                                   <li class="menu-item">
+                                       <a href="#periodic-service">Duplicate Key Recovery</a>
+                                   </li>
+                                   <li class="menu-item">
+                                       <a href="#periodic-service">Electric Store</a>
+                                   </li>
+                               </ul>
+                           </li>
+                           <li class="menu-item">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        </ul>
+                    </nav>
                 </div>
-            </div> -->
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-5-line"></i>
             </div>
-        </nav>
-    </header>
+        </header>
 
     <!-- =========================END HEADER SECTION================== -->
     
@@ -171,31 +151,28 @@
             </div>
             <div class="right">
                 <div class="heading">
-                    <h3>who we are</h3>
+                    <h3>Who We Are</h3>
                     <h1>Servicing Mobility Of Indians <br>
                         In An Innovative Way!</h1>
                     <p>Go Serve Is One Of The reputed Garages For providing high quality services. The services consist of General services, Specific Services, Roadside Assistance (RSA) and exceptional Pick Up & Drop Facility.</p>
+                    <p>Go Serve also has a high-tech facility that converts your petrol Two-wheelers to electric and CNG vehicles</p>
                 </div>
                 <div class="sub__quality">
                     <div class="price__row flex">
                         <img src="./assets/images/price_circle.png" alt="">
-                        <span>Quality is the foundation of the company</span>
+                        <span>Quality Is Our Priority</span>
                     </div>
                     <div class="price__row flex">
                         <img src="./assets/images/price_circle.png" alt="">
-                        <span>Focus is on the customer at all times.</span>
+                        <span>Customer Satisfaction Is Our Goal</span>
                     </div>
                     <div class="price__row flex">
                         <img src="./assets/images/price_circle.png" alt="">
-                        <span>Employee morale and company engagement.</span>
+                        <span>Good Ambience At The Garage</span>
                     </div>
                     <div class="price__row flex">
                         <img src="./assets/images/price_circle.png" alt="">
-                        <span>Customers and Suppliers are important stakeholders.</span>
-                    </div>
-                    <div class="price__row flex">
-                        <img src="./assets/images/price_circle.png" alt="">
-                        <span>The core ingredient of the company is integrity of all</span>
+                        <span>Hi Tech Machines & Skilled Mechanics</span>
                     </div>
                 </div>
             </div>
@@ -275,7 +252,7 @@
                         <img src="./assets/images/vision.png" alt="">
                     </div>
                     <h2>Our vision</h2>
-                    <p>Our vision is to provide help, in giving shape to the dreams of an entrepreneur to establish his business of two wheeler automobile and provide a satisfying service to customers, through innovative, professional and new age approach.</p>
+                    <p>To Be The Friend Indeed to the one who is in Vehicular Need.</p>
                 </div>
             </div>
             <span class="line"></span>
@@ -288,7 +265,7 @@
                         <img src="./assets/images/target.png" alt="">
                     </div>
                     <h2>Our Mision</h2>
-                    <p>Our vision is to provide help, in giving shape to the dreams of an entrepreneur to establish his business of two wheeler automobile and provide a satisfying service to customers, through innovative, professional and new age approach.</p>
+                    <p>Our Mission Is to be the one stop quality service center for every vehicle.</p>
                 </div>
             </div>
         </div>
@@ -313,7 +290,7 @@
                         <div class="bikeBx">
                             <img src="./assets/images/calendar.png" alt="">
                         </div>
-                        <p>Online <br> booking</p>
+                        <p>Easy <br> Booking</p>
                         <div class="vr-line"></div>
                     </div>
     
@@ -321,8 +298,7 @@
                         <div class="bikeBx">
                             <img src="./assets/images/calendar.png" alt="">
                         </div>
-                        <p>Standard <br>
-                            Workshop</p>
+                        <p>Hi-Tech <br> Workshop</p>
                         <div class="vr-line"></div>
                     </div>
     
@@ -330,8 +306,7 @@
                         <div class="bikeBx">
                             <img src="./assets/images/crank.png" alt="">
                         </div>
-                        <p>Qualified <br>
-                           Technician</p>
+                        <p>Skilled <br> Mechanics</p>
                         <div class="vr-line"></div>
                     </div>
                     
@@ -341,8 +316,7 @@
                         <div class="bikeBx">
                             <img src="./assets/images/Insurance.png" alt="">
                         </div>
-                        <p>Insured <br>
-                            Work</p>
+                        <p>Insured <br> Work</p>
                         <div class="vr-line"></div>
                     </div>
     

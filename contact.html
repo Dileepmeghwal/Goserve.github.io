@@ -55,76 +55,57 @@
         </div>
 
     </div>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav__logo">
-                <a href="#" class="">
+
+    <!--================ HEADER========================== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <div class="logo">
                     <img src="./assets/images/logo.png" alt="">
-                </a>
-            </div>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link active-link">Home</a>
-                    </li>
-                    <span></span>
-                    <li class="nav__item">
-                        <a href="about.html" class="nav__link">About Us</a>
-                    </li>
-                    <span></span>
-                    <li class="nav__item">
-                        <div class="dropdown">
-                            <button class="dropbtn">our franchises</button>
-                            <div class="dropdown-content">
-                              <a href="#">Goserve Ghatlodiya</a>
-                              <a href="#">Shree Enterprises Gota</a>
-                              <a href="#">Goserve Naranpura</a>
-                              <a href="#">Goserve Satadhar</a>
-                              <a href="#">SRP Motorworks</a>
-                              <a href="#">Jain Auto Service</a>
-                            </div>
-                          </div>
-                    </li>
-                    <span></span>
-                    <li class="nav__item">
-                        <div class="dropdown">
-                            <a href="service.html">
-                                <button class="dropbtn">Services</button>
-                            </a>
-                            <div class="dropdown-content">
-                              <a href="service.html">Periodic Service</a>
-                              <a href="#">Two Wheeler RSA</a>
-                              <a href="#">Four Wheeler RSA</a>
-                              <a href="#">Insurance</a>
-                            </div>
-                          </div>
-                    </li>
-                    <span></span>
-                    <li class="nav__item">
-                        <a href="contact.html" class="nav__link">Contact Us</a>
-                    </li>
-                    <span></span>
-                </ul>
-
-                <i class="ri-close-line nav__close" id="nav-close"></i>
-            </div>
-
-            <!-- <div class="search__box">
-                <div class="search">
-                    <div class="input__box">
-                        <input type="search" placeholder="Search" name="" id="">
-                    </div>
-                    <div class="search__icon">
-                        <span class="ri-search-line"></span>
-                    </div>
                 </div>
-            </div> -->
+                <div class="open-nav-menu">
+                    <span></span>
+                </div>
+                <div class="menu-overlay">
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-5-line"></i>
+                </div>
+                <!-- navgation menu -->
+                <nav class="nav-menu">
+                    <div class="close-nav-menu">
+                        <span class="ri-close-fill"></span>
+                    </div>
+                    <ul class="menu">
+                       <li class="menu-item">
+                           <a href="index.html">Home</a>
+                       </li>
+                       
+                       <li class="menu-item">
+                           <a href="about.html">About Us</a>
+                       </li>
+                       <li class="menu-item menu-item-has-childern">
+                           <a href="#" data-toggle="sub-menu">Services <span class="ri-arrow-down-s-line ceret"></span></a>
+                           <ul class="sub-menu">
+                               <li class="menu-item">
+                                   <a href="service.html">Periodic Services</a>
+                               </li>
+                               <li class="menu-item">
+                                   <a href="#periodic-service">Two-Wheeler Break Down</a>
+                               </li>
+                               <li class="menu-item">
+                                   <a href="#periodic-service">Duplicate Key Recovery</a>
+                               </li>
+                               <li class="menu-item">
+                                   <a href="#periodic-service">Electric Store</a>
+                               </li>
+                           </ul>
+                       </li>
+                       <li class="menu-item">
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
 
     <!-- =========================END HEADER SECTION================== -->
@@ -386,65 +367,7 @@
    
     <!-- ======================END BRAND SECTION==================== -->
 
-    <!-- =====================OUR CUSTOMER========================= -->
-    <section class="customer__section">
-        <div class="t-squre">
-            <img src="./assets/images/square.png" alt="">
-        </div>
-        <div class="customer__inner inner">
-            <div class="left-qoute">
-                <img src="./assets/images/leftqoute.png" alt="">
-            </div>
-            <div class="right-qoute">
-                <img src="./assets/images/rightqote.png" alt="">
-            </div>
-            <div class="inner__text">
-                <h1 class="steps">Our Customers</h1>
-            </div>
-            <div class="title">
-                <h3 class="move">Our Customers</h3>
-            </div>
-
-            <div class="sub__heading">
-                <p>Go Serve has hundreds of happy customers. We try our best <br> 
-                    to provide our customer top-class services at best rates</p>
-            </div>
-            <div class="testimonial__wrapper">
-                <div class="t-slider">
-                    <div class="t-slide">
-                        <div class="text-main">
-                            <p>"Great service of vehicle, they have pick up and drop off service also. I had done my
-                                bike
-                                (pulsur 220) service there.im satisfied from service. Do once visit there."</p>
-                        </div>
-                        <div class="img__flex flex">
-                            <div class="left-img">
-                                <img src="./assets/images/testimonial (2).png" alt="">
-                            </div>
-                            <div class="center-img">
-                                <img src="./assets/images/testimonial (1).png" alt="">
-                            </div>
-                            <div class="right-img">
-                                <img src="./assets/images/testimonial (3).png" alt="">
-                            </div>
-                        </div>
-                        <div class="user__name">
-                            <h3>Dhruvi Sodagar</h3>
-                        </div>
-                    </div>
-                    <div class="pagination">
-                        <div class="prev">
-                            <span class="ri-arrow-left-s-line"></span>
-                        </div>
-                        <div class="next">
-                            <span class="ri-arrow-right-s-line"></span>
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </section>
-    <!-- =====================END OUR CUSTOMER========================= -->
-
+    
 
 
     <!-- ==========================FOOTER SECTION======================== -->

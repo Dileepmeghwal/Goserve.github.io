@@ -230,18 +230,18 @@ a{
 }
 .header .menu > .menu-item > .sub-menu{
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    width: 200px;
+    width: 230px;
     position: absolute;
-    left: 0;
+    left: -40px;
     padding: 10px 0;
     border-top: 3px solid var(--first-color);
     top: 100%;
-    background-color: var(--white-color);
-    transform: translateY(10px);
+    background-color: var(--body-bg);
+    transform: translateY(50px);
     transition: all 0.3s ease;
     opacity: 0;
     visibility: hidden;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 .menu-item span{
     display: inline-block;
@@ -348,6 +348,9 @@ a{
     visibility: visible;
     opacity: 1;
 }
+body > header > div > div > nav{
+    margin-left: -50px;
+}
 
 
 
@@ -370,6 +373,7 @@ a{
         padding: 15px 0;
         transition: all 0.3s ease;
     }
+
     .header .nav-menu.open{
         visibility: visible;
         right: 0;
@@ -884,8 +888,11 @@ a{
     padding: .4rem 0;
     line-height: 26px;
     text-align: center;
+    transition: all 0.3s ease;
 }
-
+.buy__button:hover{
+    background-color: var(--third-alt-color);
+}
 .condition{
     display: block;
     text-align: left;
@@ -974,11 +981,11 @@ a{
     position: relative;
     top: 10px;
 }
-.bike__bx:hover{
+/* .bike__bx:hover{
     background-color: var(--circle-bg);
     border-radius: .5rem;
     border-right: 2px solid var(--first-alt-color);
-}
+} */
 .bike__wrapper .left{
     width: 45%;
 }
@@ -1214,6 +1221,10 @@ footer{
     text-transform: capitalize;
     background-blend-mode: darken;
 }
+.title__text{
+    transform: translateY(40px);
+    padding: 5% 0;
+}
 .link__prev{
     margin: var(--mb-0-75) 0;
 }
@@ -1441,6 +1452,9 @@ footer{
 .pop-up{
     border: 2px solid var(--input-border);
     border-radius: .5rem;
+    position: relative;
+    min-height: 60vh;
+    z-index: 88;
 }
 
 .services__content img{
@@ -1451,9 +1465,14 @@ footer{
     width: 100%;
     padding: 1rem;
     color: var(--white-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .pop-up .text{
     padding: 1rem;
+    transform: translateY(50px);
 }
 .service__details{
     margin: var(--mb-2) 0;
