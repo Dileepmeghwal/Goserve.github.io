@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
 
     <!-- ================AOS====================== -->
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.6.0.min.js">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--=============== REMIXICONS ===============-->
@@ -23,12 +24,12 @@
      <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <title>Home Go Serve</title>
+    <title>Go Serve</title>
 </head>
 
 <body>
@@ -56,72 +57,74 @@
         </div>
 
     </div>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav__logo">
-                <a href="#" class="">
+    
+    <!--================ HEADER========================== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <div class="logo">
                     <img src="./assets/images/logo.png" alt="">
-                </a>
-            </div>
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link active-link">Home</a>
-                    </li>
-                    <span></span>
-                    <li class="nav__item">
-                        <a href="about.html" class="nav__link">About Us</a>
-                    </li>
-                    <span></span>
-                    <li class="nav__item dropdown">
-                        <a href="#" class="nav__link dropbtn">our franchises
-                            <div class="dropdown-content">
-                                <a href="#">Goserve Ghatlodiya</a>
-                                <a href="#">Shree Enterprises Gota</a>
-                                <a href="#">Goserve Naranpura</a>
-                                <a href="#">Goserve Satadhar</a>
-                                <a href="#">SRP Motorworks</a>
-                                <a href="#">Jain Auto Service</a>
-                            </div>
-                        </a>
-                    </li>
-                    <span></span>
-                    <li class="nav__item dropdown">
-                        <a href="service.html" class="nav__link dropbtn">Services
-                            <div class="dropdown-content">
-                                <a href="service.html">Periodic Service</a>
-                                <a href="#">Two Wheeler RSA</a>
-                                <a href="#">Four Wheeler RSA</a>
-                                <a href="#">Insurance</a>
-                            </div>
-                        </a>
-                    </li>
-                    <span></span>
-                    <li class="nav__item">
-                        <a href="contact.html" class="nav__link">Contact Us</a>
-                    </li>
-                    <span></span>
-                </ul>
-
-                <i class="ri-close-line nav__close" id="nav-close"></i>
-            </div>
-
-            <!-- <div class="search__box">
-                <div class="search">
-                    <div class="input__box">
-                        <input type="search" placeholder="Search" name="" id="">
-                    </div>
-                    <div class="search__icon">
-                        <span class="ri-search-line"></span>
-                    </div>
                 </div>
-            </div> -->
+                <div class="open-nav-menu">
+                    <span></span>
+                </div>
+                <div class="menu-overlay">
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-5-line"></i>
+                </div>
+                <!-- navgation menu -->
+                <nav class="nav-menu">
+                    <div class="close-nav-menu">
+                        <span class="ri-close-fill"></span>
+                    </div>
+                    <ul class="menu">
+                       <li class="menu-item">
+                           <a href="#">Home</a>
+                       </li>
+                       
+                       <li class="menu-item">
+                           <a href="#">About</a>
+                       </li>
+                       <li class="menu-item menu-item-has-childern">
+                           <a href="#" data-toggle="sub-menu">Services <span class="ri-arrow-down-s-line ceret"></span></a>
+                           <ul class="sub-menu">
+                               <li class="menu-item">
+                                   <a href="#">Link</a>
+                               </li>
+                               <li class="menu-item">
+                                   <a href="#">Link</a>
+                               </li>
+                               <li class="menu-item">
+                                   <a href="#">Link</a>
+                               </li>
+                               <li class="menu-item">
+                                   <a href="#">Link</a>
+                               </li>
+                           </ul>
+                       </li>
+                       <li class="menu-item menu-item-has-childern">
+                           <a href="#" data-toggle="sub-menu">Blog <span class="ri-arrow-down-s-line ceret"></span></a>
+                           <ul class="sub-menu">
+                               <li class="menu-item">
+                                   <a href="#">Link</a>
+                               </li>
+                               <li class="menu-item">
+                                   <a href="#">Link</a>
+                               </li>
+                               <li class="menu-item">
+                                   <a href="#">Link</a>
+                               </li>
+                               <li class="menu-item">
+                                   <a href="#">Link</a>
+                               </li>
+                           </ul>
+                       </li>
+                       <li class="menu-item">
+                           <a href="#">Contact Us</a>
+                       </li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
+        </div>
     </header>
 
     <!-- =========================HERO SECTION================== -->
@@ -134,13 +137,11 @@
                 <div class="caption" data-count="1">
                     <div class="main__text">
                         <h1 class="italic__text">A Reliable </h1>
-                        <h1 class="heading">TWO WHEELER <br>
-                            <span class="bold" >REPAIR SERVICE</span> <br>
-                            IN AHMEDABAD
+                        <h1 class="heading">A Quality Two-Wheeler <br> Service Center In<br>
+                            <span class="bold" >AHMEDABAD</span> <br>
                         </h1>
                         <p class="subtitle">
-                            Follow these three simple steps to book your <br>
-                            Scooterette & bike Repair service near you.
+                            Follow 3 Easy Steps To Book Quality Service for your Two-Wheelers
                         </p>
             
                         <a href="#" class="book__now">
@@ -156,13 +157,11 @@
                 <div class="caption" data-count="2">
                     <div class="main__text">
                         <h1 class="italic__text">A Reliable </h1>
-                        <h1 class="heading">TWO WHEELER <br>
-                            <span class="bold" >REPAIR SERVICE</span> <br>
-                            IN AHMEDABAD
+                        <h1 class="heading">A Quality Two-Wheeler <br> Service Center In<br>
+                            <span class="bold" >AHMEDABAD</span> <br>
                         </h1>
                         <p class="subtitle">
-                            Follow these three simple steps to book your <br>
-                            Scooterette & bike Repair service near you.
+                            Follow 3 Easy Steps To Book Quality Service for your Two-Wheelers
                         </p>
             
                         <a href="#" class="book__now">
@@ -178,13 +177,11 @@
                 <div class="caption" data-count="3">
                     <div class="main__text">
                         <h1 class="italic__text">A Reliable </h1>
-                        <h1 class="heading">TWO WHEELER <br>
-                            <span class="bold" >REPAIR SERVICE</span> <br>
-                            IN AHMEDABAD
+                        <h1 class="heading">A Quality Two-Wheeler <br> Service Center In<br>
+                            <span class="bold" >AHMEDABAD</span> <br>
                         </h1>
                         <p class="subtitle">
-                            Follow these three simple steps to book your <br>
-                            Scooterette & bike Repair service near you.
+                            Follow 3 Easy Steps To Book Quality Service for your Two-Wheelers
                         </p>
             
                         <a href="#" class="book__now">
@@ -231,12 +228,13 @@
             </div>
             <div class="three__col">
                 <div class="booking__text">
-                    <h4>Login / RegistrationIpsum</h4>
+                    <h4>Easy Registration via App</h4>
                     <p>Customer can easily <br>
                         via mobile application.</p>
                 </div>
                 <div class="booking__text">
-                    <h4>Select Nearest Franchise</h4>
+                    <h4>Choose Your Nearest Franchise
+                    </h4>
                     <p>Find nearest <br>
                         Franchise.</p>
                 </div>
@@ -271,8 +269,7 @@
             </div>
 
             <div class="sub__heading">
-                <p>Two Wheeler Services Offered <br>
-                    By <span>Go ServeIpsum</span></p>
+                <p>Two - Wheeler Services</p>
             </div>
 
             <div class="services__wraper flex">
@@ -443,8 +440,7 @@
             </div>
 
             <div class="sub__heading">
-                <p>Buy our service packages like Road Side Assistance and <br>
-                    Two Wheeler Service Maintenance Card and secure your ride.</p>
+                <p>Yearly Protection With Extra Service Benefits.</p>
             </div>
         </div>
 
@@ -610,8 +606,11 @@
     <!-- ============================OFFER BANNER=================== -->
     <section class="offer__banner">
         <div class="text">
-            <h1>LET <span>'</span> S BUILD YOUR <br>
-                DREAM BIKE!</h1>
+           
+
+            <h1> Let’s Get
+                 Your Two - Wheelers <br> Hybridize <br>
+                Convert Your Two-Wheelers Into <br> Electric & CNG</h1>
                 <div class="zing__line">
                     <img src="./assets/images/zig-line.png" alt="">
                 </div>
@@ -639,6 +638,10 @@
             </div>
             <div class="title">
                 <h3 class="move">Brands We Service</h3>
+            </div>
+            <div class="sub__heading">
+                <p>Happy Customers</p>
+              <span>Go Serve Auto India</span> is a chain of multi-brand two-wheeler <br> service centers offering a wide range of two-wheeler services
             </div>
         </div>
         <div class="bike__wrapper inner flex">
@@ -735,6 +738,7 @@
             </div>
             <div class="title">
                 <h3 class="move">Our Customers</h3>
+
             </div>
 
             <div class="sub__heading">

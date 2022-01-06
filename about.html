@@ -10,19 +10,17 @@
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
 
     <!-- ================AOS====================== -->
+    <link rel="stylesheet" href="css/flipster.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== SLICK SLIDER ===============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
  <!-- ================== SWIPER========================= -->
- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -58,15 +56,15 @@
     <header class="header" id="header">
         <nav class="nav container">
             <div class="nav__logo">
-                <a href="#" class="">
+                <a href="index.html" class="">
                     <img src="./assets/images/logo.png" alt="">
                 </a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
+                <ul class="nav__list" id="navMenu">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link active-link">Home</a>
+                        <a href="index.html" class="nav__link active">Home</a>
                     </li>
                     <span></span>
                     <li class="nav__item">
@@ -134,7 +132,7 @@
     <section class="title__bg">
         <div class="title__text">
             <h1>About us</h1>
-            <p>Reach to Us for Quick & Reliable Two-Wheeler Services Near You</p>
+            <p>We Are A Chain Of Multi Brand Two-Wheeler Service Centers</p>
 
             <div class="link__prev">
                 <a href="index.html" class="active__page">Home</a> > About Us
@@ -176,9 +174,7 @@
                     <h3>who we are</h3>
                     <h1>Servicing Mobility Of Indians <br>
                         In An Innovative Way!</h1>
-                    <p>Go Serve is reputed as the foremost brand having twin benefits of mobile app and digitally enabled service provider for services related to multi-brand two wheelers.
-                        Be it general maintenance or specific problem solving, Go Serve has <br>
-                        fantastic pick and drop service added to their range of services that are carried out in highly professional settings. </p>
+                    <p>Go Serve Is One Of The reputed Garages For providing high quality services. The services consist of General services, Specific Services, Roadside Assistance (RSA) and exceptional Pick Up & Drop Facility.</p>
                 </div>
                 <div class="sub__quality">
                     <div class="price__row flex">
@@ -516,6 +512,12 @@
     <script src="./assets/js/swiper.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.flipster.min.js"></script>
+<script>
+    $('.my-flipster').flipster();
+</script>
 
     <script>
       AOS.init({
