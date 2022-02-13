@@ -1078,6 +1078,7 @@ body > header > div > div > nav{
     padding: var(--mb-1) 0;
 }
 
+
 /* ==========================END CUSTOMER SECTION========================= */
 
 
@@ -1688,15 +1689,23 @@ textarea{
     padding: var(--mb-0-25) 0;
 }
 
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
 
-
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite{
+    display: none;
+}
 /* testimonials */
 
 /* ========================END   OUR FRANCISE===================== */
 /* =======================END CONTACT US============================ */
 
 @media screen and (max-width: 980px) {
-
+    .swiper-wrapper {
+        width: 600px !important;
+    }
     .price__box{
         width: 48%;
         margin-bottom: var(--mb-1);
@@ -1832,6 +1841,10 @@ textarea{
     .vr-line{
         display: none;
     }
+    .anual__left{
+        left: 0;
+        top:80px;
+    }
 
 }
 
@@ -1866,24 +1879,36 @@ textarea{
     .small__vector__two {
         width: 5px;
     }
+
     .anual__left,
     .anual__right {
         width: 5px;
+    }
+    .anual__left{
+        left: 0;
+        top: 80px;
     }
     .annual__sqr {
         width: 100px;
         left: -55px;
     }
     .offer__banner .text h1 {
-        font-size: var(--h1-font-size);
+        font-size: var(--h2-font-size);
     }
-    .offer__banner .text{
+    .offer__banner .text p{
+        font-size: var(--small-font-size);
+    }
+    .offer__banner .text {
+        transform: translateX(5%);
+        width: 100%;
         overflow: hidden;
+        word-break: break-all;
     }
     .mini__banner-btn {
         width: 90px;
         height: 35px;
         background-color: var(--first-alt-color);
+        font-size: var(--small-font-size);
     }
     .offer__banner {
         width: 100%;
