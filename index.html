@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--=============== REMIXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== SLICK SLIDER ===============-->
@@ -37,7 +38,7 @@
 </head>
 
 <body>
-    <div class="header__footer flex">
+    <!-- <div class="header__footer flex ">
         <div class="header__icons">
             <a href="#">
                 <span class="ri-instagram-line"></span>
@@ -61,60 +62,89 @@
             <p>+91 6356 886 886 </p>
         </div>
 
-    </div>
+    </div> -->
 
     <!--================ HEADER========================== -->
-    <header class="header">
-        <div class="container">
-            <div class="header-main">
-                <div class="logo">
-                    <img src="./assets/images/logo.png" alt="">
+    <header class="header ">
+        <nav>
+            <div class="navbar">
+              <i class='bx bx-menu'></i>
+              <div class="logo"><a href="#"><img src="./assets/images/logo.png" alt="logo"></a></div>
+              <div class="nav-links">
+                <div class="sidebar-logo">
+                  <span class="logo-name"><img src="./assets/images/logo.png" alt=""></span>
+                  <i class='bx bx-x' ></i>
                 </div>
-                <div class="open-nav-menu">
-                    <span></span>
-                </div>
-                <div class="menu-overlay">
-
-                </div>
-                <!-- navgation menu -->
-                <nav class="nav-menu">
-                    <div class="close-nav-menu">
-                        <span class="ri-close-fill"></span>
-                    </div>
-                    <ul class="menu">
-                        <li class="menu-item">
-                            <a href="index.html">Home</a>
-                        </li>
-
-                        <li class="menu-item">
-                            <a href="about.html">About Us</a>
-                        </li>
-                        <li class="menu-item menu-item-has-childern">
-                            <a href="#" data-toggle="sub-menu">Services <span
-                                    class="ri-arrow-down-s-line ceret"></span></a>
-                            <ul class="sub-menu">
-                                <li class="menu-item">
-                                    <a href="service.html">Periodic Services</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#periodic-service">Two-Wheeler Break Down</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#periodic-service">Duplicate Key Recovery</a>
-                                </li>
-                                <li class="menu-item">
-                                    <a href="#periodic-service">Electric Store</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item">
-                            <a href="contact.html">Contact Us</a>
-                        </li>
+                <ul class="links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li>
+                    <a href="service.html">Services</a>
+                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                    <ul class="htmlCss-sub-menu sub-menu">
+                      <li class="more">
+                        <span><a href="#">Periodic</a>
+                        <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                      </span>
+                        <ul class="more-sub-menu sub-menu">
+                          <li><a href="#">Single Service</a></li>
+                          <li><a href="#">Double Service</a></li>
+                          <li><a href="#">AMC Service</a></li>
+                          <li><a href="#">Customized Service</a></li>
+                        </ul>
+                      </li>
+                      <li class="more">
+                        <span><a href="#">Two-Wheeler Break Down</a>
+                        <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                      </span>
+                        <ul class="more-sub-menu sub-menu">
+                          <li><a href="#">Puncture</a></li>
+                          <li><a href="#">Petrol Delivery</a></li>
+                          <li><a href="#">Vehicle Breakdown</a></li>
+                          <li><a href="#">Towing</a></li>
+                          <li><a href="#">Duplicate Key Recovery</a></li>
+                        </ul>
+                      </li>
+                      <li class="more">
+                        <span><a href="#">Four-Wheeler Break Down</a>
+                        <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                      </span>
+                        <ul class="more-sub-menu sub-menu">
+                          <li><a href="#">Puncture</a></li>
+                          <li><a href="#">Battery Jump Start</a></li>
+                          <li><a href="#">Towing</a></li>
+                          <li><a href="#">Duplicate Key Recovery</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Electric Store Products</a></li>
+                      <li><a href="#">Vehicle Customization</a></li>
+                      <li><a href="#">Insurance (Renewal & New)</a></li>
+                      <li><a href="#">Extended Warranty</a></li>
                     </ul>
-                </nav>
+                  </li>
+                  <!-- <li>
+                    <a href="#">JAVASCRIPT</a>
+                    <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                    <ul class="js-sub-menu sub-menu">
+                      <li><a href="#">Dynamic Clock</a></li>
+                      <li><a href="#">Form Validation</a></li>
+                      <li><a href="#">Card Slider</a></li>
+                      <li><a href="#">Complete Website</a></li>
+                    </ul>
+                  </li> -->
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="search-box">
+                <i class='bx bx-search'></i>
+                <div class="input-box">
+                  <input type="text" placeholder="Search...">
+                </div>
+              </div>
             </div>
-        </div>
+          </nav>
     </header>
+    
 
     <!-- =========================HERO SECTION================== -->
     <div class="slider__wrap">
@@ -200,7 +230,7 @@
                 <h1 class="steps smaller">Online Booking Steps</h1>
             </div>
             <div class="title">
-                <h3 class="move down">Online Booking Steps</h3>
+
             </div>
 
             <div class="sub__heading">
@@ -254,7 +284,7 @@
                 <h1 class="steps">Our Services</h1>
             </div>
             <div class="title">
-                <h3 class="move">Our Services</h3>
+                <!-- <h3 class="move">Our Services</h3> -->
             </div>
 
             <div class="sub__heading">
@@ -264,6 +294,7 @@
             <div class="services__wraper flex" id="periodic-service">
                 <div class="service__card">
                     <div class="service__image">
+                        <img src="./assets/images/bikerepair1.jpg" alt="">
                     </div>
                     <div class="card__text">
                         <div class="card__icon">
@@ -294,6 +325,7 @@
                 </div>
                 <div class="service__card">
                     <div class="service__image">
+                        <img src="./assets/images/two-wheeler.jpg" alt="">
                     </div>
                     <div class="card__text">
                         <div class="card__icon">
@@ -327,6 +359,7 @@
                 </div>
                 <div class="service__card">
                     <div class="service__image">
+                        <img src="./assets/images/four-w-b.jpg" alt="">
                     </div>
                     <div class="card__text">
                         <div class="card__icon">
@@ -357,6 +390,7 @@
                 </div>
                 <div class="service__card">
                     <div class="service__image">
+                        <img src="./assets/images/electric-p.jpg" alt="">
                     </div>
                     <div class="card__text">
                         <div class="card__icon">
@@ -369,6 +403,7 @@
                 </div>
                 <div class="service__card">
                     <div class="service__image">
+                        <img src="./assets/images/custom.jpg" alt="">
                     </div>
                     <div class="card__text">
                         <div class="card__icon">
@@ -381,6 +416,7 @@
                 </div>
                 <div class="service__card">
                     <div class="service__image">
+                        <img src="./assets/images/two-w.jpg" alt="">
                     </div>
                     <div class="card__text">
                         <div class="card__icon">
@@ -402,6 +438,7 @@
                 </div>
                 <div class="service__card">
                     <div class="service__image">
+                        <img src="./assets/images/pexels-andrea-piacquadio-3806275.jpg" alt="">
                     </div>
                     <div class="card__text">
                         <div class="card__icon">
@@ -438,7 +475,7 @@
                 <h1 class="steps">Annual Packages</h1>
             </div>
             <div class="title">
-                <h3 class="move">Annual Packages</h3>
+
             </div>
 
             <div class="sub__heading">
@@ -493,7 +530,7 @@
                     <p>1299.00</p>
                 </div>
 
-                <a href="#" class="buy__button">Buy Now</a>
+                <a href="https://play.google.com/store/apps/details?id=com.github.android" class="buy__button">Buy Now</a>
 
                 <span class="condition">Term & Conditions</span>
             </div>
@@ -544,7 +581,7 @@
                     <p>2499.00</p>
                 </div>
 
-                <a href="#" class="buy__button">Buy Now</a>
+                <a href="https://play.google.com/store/apps/details?id=com.github.android" class="buy__button">Buy Now</a>
 
                 <span class="condition">Term & Conditions</span>
             </div>
@@ -595,7 +632,7 @@
                     <p>1299.00</p>
                 </div>
 
-                <a href="#" class="buy__button">Buy Now</a>
+                <a href="https://play.google.com/store/apps/details?id=com.github.android" class="buy__button">Buy Now</a>
 
                 <span class="condition">Term & Conditions</span>
             </div>
@@ -618,7 +655,7 @@
             </div>
             <p>Buy our service packages like Road Side Assistance and <br>
                 Two Wheeler Service Maintenance Card and secure your ride.</p>
-            <a href="#" class="book__now mini__banner-btn">
+            <a href="https://play.google.com/store/apps/details?id=com.github.android" class="book__now mini__banner-btn">
                 Book Now
             </a>
         </div>
@@ -639,7 +676,7 @@
                 <h1 class="steps">Brands We Service</h1>
             </div>
             <div class="title">
-                <h3 class="move">Brands We Service</h3>
+
             </div>
             <div class="sub__heading">
                 <span>Go Serve Auto India</span> is a chain of multi-brand two-wheeler <br> service centers offering a
@@ -740,7 +777,7 @@
                 <!-- <p style="font-weight: 800;">Happy Customers</p> -->
             </div>
             <div class="title">
-                <h3 class="move">Our Customers</h3>
+
             </div>
 
             <div class="sub__heading">
@@ -866,8 +903,10 @@
                     <h4>DOWNLOAD OUR DEMO APPLICATION</h4>
                 </div>
                 <div class="download">
-                    <img src="./assets/images/ios.png" alt="">
-                    <img src="./assets/images/android.png" alt="">
+                    <a href="https://play.google.com/store/apps/details?id=com.github.android"><img
+                            src="./assets/images/ios.png" alt=""></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.github.android"><img
+                            src="./assets/images/android.png" alt=""></a>
                 </div>
             </div>
             <div class="footer__box">
@@ -909,7 +948,7 @@
 
         </div>
         <div class="copyright__footer">
-            <p>&copy; 2021 - Goserve Auto India LLP.Powered by:</p>
+            <p>&copy; 2022 - Goserve Auto India LLP.Powered by:</p>
         </div>
     </footer>
 
@@ -939,10 +978,10 @@
     <script>
         $('.slider').slick({
             dots: true,
-            vertical: true,
+            vertical: false,
             draggable: true,
-            // autoplay: true,
-            // autoplaySpeed: 3000,
+            autoplay: true,
+            autoplaySpeed: 3000,
             cssEase: 'ease',
             mobileFirst: true,
             swipe: true,

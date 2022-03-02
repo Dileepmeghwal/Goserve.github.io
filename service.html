@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="./assets/js/jquery.js"></script>
     <!--=============== REMIXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== SLICK SLIDER ===============-->
@@ -59,55 +60,84 @@
     </div>
 
     <!-- ========================HEADER===================== -->
-    <header class="header">
-        <div class="container">
-            <div class="header-main">
-                <div class="logo">
-                    <img src="./assets/images/logo.png" alt="">
+    <header class="header ">
+        <nav>
+            <div class="navbar">
+              <i class='bx bx-menu'></i>
+              <div class="logo"><a href="index.html"><img src="./assets/images/logo.png" alt="logo"></a></div>
+              <div class="nav-links">
+                <div class="sidebar-logo">
+                  <span class="logo-name"><img src="./assets/images/logo.png" alt=""></span>
+                  <i class='bx bx-x' ></i>
                 </div>
-                <div class="open-nav-menu">
-                    <span></span>
-                </div>
-                <div class="menu-overlay">
-
-                </div>
-                <!-- navgation menu -->
-                <nav class="nav-menu">
-                    <div class="close-nav-menu">
-                        <span class="ri-close-fill"></span>
-                    </div>
-                    <ul class="menu">
-                       <li class="menu-item">
-                           <a href="index.html">Home</a>
-                       </li>
-                       
-                       <li class="menu-item">
-                           <a href="about.html">About Us</a>
-                       </li>
-                       <li class="menu-item menu-item-has-childern">
-                           <a href="#" data-toggle="sub-menu">Services <span class="ri-arrow-down-s-line ceret"></span></a>
-                           <ul class="sub-menu">
-                               <li class="menu-item">
-                                   <a href="service.html">Periodic Services</a>
-                               </li>
-                               <li class="menu-item">
-                                   <a href="#periodic-service">Two-Wheeler Break Down</a>
-                               </li>
-                               <li class="menu-item">
-                                   <a href="#periodic-service">Duplicate Key Recovery</a>
-                               </li>
-                               <li class="menu-item">
-                                   <a href="#periodic-service">Electric Store</a>
-                               </li>
-                           </ul>
-                       </li>
-                       <li class="menu-item">
-                        <a href="contact.html">Contact Us</a>
-                    </li>
+                <ul class="links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li>
+                    <a href="service.html">Services</a>
+                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                    <ul class="htmlCss-sub-menu sub-menu">
+                      <li class="more">
+                        <span><a href="#">Periodic</a>
+                        <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                      </span>
+                        <ul class="more-sub-menu sub-menu">
+                          <li><a href="#">Single Service</a></li>
+                          <li><a href="#">Double Service</a></li>
+                          <li><a href="#">AMC Service</a></li>
+                          <li><a href="#">Customized Service</a></li>
+                        </ul>
+                      </li>
+                      <li class="more">
+                        <span><a href="#">Two-Wheeler Break Down</a>
+                        <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                      </span>
+                        <ul class="more-sub-menu sub-menu">
+                          <li><a href="#">Puncture</a></li>
+                          <li><a href="#">Petrol Delivery</a></li>
+                          <li><a href="#">Vehicle Breakdown</a></li>
+                          <li><a href="#">Towing</a></li>
+                          <li><a href="#">Duplicate Key Recovery</a></li>
+                        </ul>
+                      </li>
+                      <li class="more">
+                        <span><a href="#">Four-Wheeler Break Down</a>
+                        <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                      </span>
+                        <ul class="more-sub-menu sub-menu">
+                          <li><a href="#">Puncture</a></li>
+                          <li><a href="#">Battery Jump Start</a></li>
+                          <li><a href="#">Towing</a></li>
+                          <li><a href="#">Duplicate Key Recovery</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Electric Store Products</a></li>
+                      <li><a href="#">Vehicle Customization</a></li>
+                      <li><a href="#">Insurance (Renewal & New)</a></li>
+                      <li><a href="#">Extended Warranty</a></li>
                     </ul>
-                </nav>
+                  </li>
+                  <!-- <li>
+                    <a href="#">JAVASCRIPT</a>
+                    <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                    <ul class="js-sub-menu sub-menu">
+                      <li><a href="#">Dynamic Clock</a></li>
+                      <li><a href="#">Form Validation</a></li>
+                      <li><a href="#">Card Slider</a></li>
+                      <li><a href="#">Complete Website</a></li>
+                    </ul>
+                  </li> -->
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="search-box">
+                <i class='bx bx-search'></i>
+                <div class="input-box">
+                  <input type="text" placeholder="Search...">
+                </div>
+              </div>
             </div>
-        </div>
+          </nav>
     </header>
     <!-- =========================END HEADER SECTION================== -->
     
@@ -274,7 +304,7 @@
 
     <!-- ======================END BRAND SECTION==================== -->
 
-    <section class="customer__section">
+    <!-- <section class="customer__section">
         <div class="t-squre">
             <img src="./assets/images/square.png" alt="">
         </div>
@@ -288,9 +318,7 @@
             <div class="inner__text">
                 <h1 class="steps">Our Customers</h1>
             </div>
-            <div class="title">
-                <h3 class="move">Our Customers</h3>
-            </div>
+
 
             <div class="sub__heading">
                 <p>Go Serve has hundreds of happy customers. We try our best <br> 
@@ -329,7 +357,7 @@
                     </div>
                 </div>
         </div>
-    </section>
+    </section> -->
     <!-- =====================END OUR CUSTOMER========================= -->
 
 
@@ -341,7 +369,8 @@
                 <div class="footer__logo">
                     <img src="./assets/images/logo.png" alt="">
                 </div>
-                <p>Go Serve Auto India is India’s leading chain of multi-brand two-wheeler service centers offering a wide range of Scooterette and Bike Service Near you in Ahmedabad.</p>
+                <p>Go Serve Auto India is India’s leading chain of multi-brand two-wheeler service centers offering a
+                    wide range of Scooterette and Bike Service Near you in Ahmedabad.</p>
             </div>
             <div class="footer__box">
                 <div class="quik__link">
@@ -357,8 +386,8 @@
                     <h4>DOWNLOAD OUR DEMO APPLICATION</h4>
                 </div>
                 <div class="download">
-                    <img src="./assets/images/ios.png" alt="">
-                    <img src="./assets/images/android.png" alt="">
+                    <a href="https://play.google.com/store/apps/details?id=com.github.android"><img src="./assets/images/ios.png" alt=""></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.github.android"><img src="./assets/images/android.png" alt=""></a>
                 </div>
             </div>
             <div class="footer__box">
@@ -366,10 +395,10 @@
                     <h4>Registered Head Office</h4>
                 </div>
                 <span class="ri-map-pin-fill"></span>Go Serve Auto India LLP <br>
-                    <p>403, parshwa Tower , <br>
-                        Nr. Pakwan Hotel , S. G. <br>
-                        Highway, Ahmedabad - <br>
-                        380054, Gujarat, India</p>
+                <p>403, parshwa Tower , <br>
+                    Nr. Pakwan Hotel , S. G. <br>
+                    Highway, Ahmedabad - <br>
+                    380054, Gujarat, India</p>
                 <div class="quik__link">
                     <h4>SOCIAL MEDIA LINK</h4>
                 </div>
@@ -391,14 +420,16 @@
                 <div class="quik__link">
                     <h4>Email </h4>
                 </div>
-                <span class="ri-mail-fill"></span><a href="mailto: abc@example.com" class="mail__link">support@goserve.co.in</a>
+                <span class="ri-mail-fill"></span><a href="mailto: abc@example.com"
+                    class="mail__link">support@goserve.co.in</a>
                 <br>
-                <span class="ri-mail-fill"></span><a href="mailto: abc@example.com" class="mail__link">support@goserve.co.in</a>
+                <span class="ri-mail-fill"></span><a href="mailto: abc@example.com"
+                    class="mail__link">support@goserve.co.in</a>
             </div>
-            
+
         </div>
         <div class="copyright__footer">
-            <p>&copy; 2021 - Goserve Auto India LLP.Powered by:</p>
+            <p>&copy; 2022 - Goserve Auto India LLP.Powered by:</p>
         </div>
     </footer>
 
