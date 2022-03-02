@@ -1871,6 +1871,8 @@ textarea{
 @media screen and (max-width: 768px) {
     .main__text{
         width: 100%;
+        position: relative;
+        top: 100px;
     }
     .caption {
         position: absolute;
@@ -2240,7 +2242,7 @@ textarea{
     .image-one{
         width: 100%;
         height: 100%;
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-image: url(../images/banner-1.jpg);
