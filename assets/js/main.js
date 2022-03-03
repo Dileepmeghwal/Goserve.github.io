@@ -1,39 +1,43 @@
-// search-box open close js code
-let navbar = document.querySelector(".navbar");
-let searchBox = document.querySelector(".search-box .bx-search");
-// let searchBoxCancel = document.querySelector(".search-box .bx-x");
+$(document).ready(function () {
+  $('.navbar-toggler').click(function () {
+    $('.navbar-collapse').slideToggle(300);
+  });
 
-searchBox.addEventListener("click", ()=>{
-  navbar.classList.toggle("showInput");
-  if(navbar.classList.contains("showInput")){
-    searchBox.classList.replace("bx-search" ,"bx-x");
-  }else {
-    searchBox.classList.replace("bx-x" ,"bx-search");
+  smallScreenMenu();
+  let temp;
+  function resizeEnd() {
+    smallScreenMenu();
   }
+
+  $(window).resize(function () {
+    clearTimeout(temp);
+    temp = setTimeout(resizeEnd, 100);
+    resetMenu();
+  });
 });
 
-// sidebar open close js code
-let navLinks = document.querySelector(".nav-links");
-let menuOpenBtn = document.querySelector(".navbar .bx-menu");
-let menuCloseBtn = document.querySelector(".nav-links .bx-x");
-menuOpenBtn.onclick = function() {
-navLinks.style.left = "0";
-}
-menuCloseBtn.onclick = function() {
-navLinks.style.left = "-100%";
+
+const subMenus = $('.sub-menu');
+const menuLinks = $('.menu-link');
+
+function smallScreenMenu() {
+  if ($(window).innerWidth() <= 992) {
+    menuLinks.each(function (item) {
+      $(this).click(function () {
+        $(this).next().slideToggle();
+      });
+    });
+  } else {
+    menuLinks.each(function (item) {
+      $(this).off('click');
+    });
+  }
 }
 
-
-// sidebar submenu open close js code
-let htmlcssArrow = document.querySelector(".htmlcss-arrow");
-htmlcssArrow.onclick = function() {
- navLinks.classList.toggle("show1");
-}
-let moreArrow = document.querySelector(".more-arrow");
-moreArrow.onclick = function() {
- navLinks.classList.toggle("show2");
-}
-let jsArrow = document.querySelector(".js-arrow");
-jsArrow.onclick = function() {
- navLinks.classList.toggle("show3");
+function resetMenu() {
+  if ($(window).innerWidth() > 992) {
+    subMenus.each(function (item) {
+      $(this).css('display', 'none');
+    });
+  }
 }

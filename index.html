@@ -10,26 +10,22 @@
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
 
     <!-- ================AOS====================== -->
-    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.6.0.min.js">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- banner slider two -->
     <!--=============== REMIXICONS ===============-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@latest/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@latest/dist/css/glide.theme.min.css">
     <!--=============== SLICK SLIDER ===============-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
 
     <!-- ================== SWIPER========================= -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -38,7 +34,7 @@
 </head>
 
 <body>
-    <!-- <div class="header__footer flex ">
+    <div class="header__footer flex ">
         <div class="header__icons">
             <a href="#">
                 <span class="ri-instagram-line"></span>
@@ -62,89 +58,92 @@
             <p>+91 6356 886 886 </p>
         </div>
 
-    </div> -->
+    </div>
 
     <!--================ HEADER========================== -->
-    <header class="header ">
-        <nav>
-            <div class="navbar">
-              <i class='bx bx-menu'></i>
-              <div class="logo"><a href="#"><img src="./assets/images/logo.png" alt="logo"></a></div>
-              <div class="nav-links">
-                <div class="sidebar-logo">
-                  <span class="logo-name"><img src="./assets/images/logo.png" alt=""></span>
-                  <i class='bx bx-x' ></i>
+    <header class="header">
+        <div class="main-wrapper">
+            <nav class="navbar">
+                <div class="brand-and-icon">
+                    <div class="logo">
+                        <a href="index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+                    </div>
+                    <button type="button" class="navbar-toggler">
+                        <i class="ri-menu-3-line"></i>
+                    </button>
                 </div>
-                <ul class="links">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li>
-                    <a href="service.html">Services</a>
-                    <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
-                    <ul class="htmlCss-sub-menu sub-menu">
-                      <li class="more">
-                        <span><a href="#">Periodic</a>
-                        <i class='bx bxs-chevron-right arrow more-arrow'></i>
-                      </span>
-                        <ul class="more-sub-menu sub-menu">
-                          <li><a href="#">Single Service</a></li>
-                          <li><a href="#">Double Service</a></li>
-                          <li><a href="#">AMC Service</a></li>
-                          <li><a href="#">Customized Service</a></li>
-                        </ul>
-                      </li>
-                      <li class="more">
-                        <span><a href="#">Two-Wheeler Break Down</a>
-                        <i class='bx bxs-chevron-right arrow more-arrow'></i>
-                      </span>
-                        <ul class="more-sub-menu sub-menu">
-                          <li><a href="#">Puncture</a></li>
-                          <li><a href="#">Petrol Delivery</a></li>
-                          <li><a href="#">Vehicle Breakdown</a></li>
-                          <li><a href="#">Towing</a></li>
-                          <li><a href="#">Duplicate Key Recovery</a></li>
-                        </ul>
-                      </li>
-                      <li class="more">
-                        <span><a href="#">Four-Wheeler Break Down</a>
-                        <i class='bx bxs-chevron-right arrow more-arrow'></i>
-                      </span>
-                        <ul class="more-sub-menu sub-menu">
-                          <li><a href="#">Puncture</a></li>
-                          <li><a href="#">Battery Jump Start</a></li>
-                          <li><a href="#">Towing</a></li>
-                          <li><a href="#">Duplicate Key Recovery</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Electric Store Products</a></li>
-                      <li><a href="#">Vehicle Customization</a></li>
-                      <li><a href="#">Insurance (Renewal & New)</a></li>
-                      <li><a href="#">Extended Warranty</a></li>
+
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="service.html" class="menu-link">
+                                Services
+                                <span class="drop-icon">
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </span>
+                            </a>
+                            <div class="sub-menu">
+                                <div class="sub-menu-item">
+                                    <h4>Periodic</h4>
+                                    <ul>
+                                        <li><a href="#">Single Service</a></li>
+                                        <li><a href="#">Double Service</a></li>
+                                        <li><a href="#">AMC Service</a></li>
+                                        <li><a href="#">Customized Service</a></li>
+                                    </ul>
+                                </div>
+                                <!-- item -->
+                                <div class="sub-menu-item">
+                                    <h4>Two-Wheeler Break Down</h4>
+                                    <ul>
+                                        <li><a href="#">Puncture</a></li>
+                                        <li><a href="#">Petrol Delivery</a></li>
+                                        <li><a href="#">Vehicle Breakdown</a></li>
+                                        <li><a href="#">Towing</a></li>
+                                        <li><a href="#">Duplicate Key Recovery</a></li>
+                                    </ul>
+                                </div>
+                                <!-- end of item -->
+                                <!-- item -->
+                                <div class="sub-menu-item">
+                                    <h4>Four-Wheeler Break Down</h4>
+                                    <ul>
+                                        <li><a href="#">Puncture</a></li>
+                                        <li><a href="#">Battery Jump Start</a></li>
+                                        <li><a href="#">Towing</a></li>
+                                        <li><a href="#">Duplicate Key Recovery</a></li>
+                                        <li><a href="#">vehicles electronics & GPS</a></li>
+                                    </ul>
+                                </div>
+                                <div class="sub-menu-item">
+                                    <h4>Four-Wheeler Break Down</h4>
+                                    <ul>
+                                        <li><a href="#">Puncture</a></li>
+                                        <li><a href="#">Battery Jump Start</a></li>
+                                        <li><a href="#">Towing</a></li>
+                                        <li><a href="#">Duplicate Key Recovery</a></li>
+                                        <li><a href="#">vehicles electronics & GPS</a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
                     </ul>
-                  </li>
-                  <!-- <li>
-                    <a href="#">JAVASCRIPT</a>
-                    <i class='bx bxs-chevron-down js-arrow arrow '></i>
-                    <ul class="js-sub-menu sub-menu">
-                      <li><a href="#">Dynamic Clock</a></li>
-                      <li><a href="#">Form Validation</a></li>
-                      <li><a href="#">Card Slider</a></li>
-                      <li><a href="#">Complete Website</a></li>
-                    </ul>
-                  </li> -->
-                  <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="search-box">
-                <i class='bx bx-search'></i>
-                <div class="input-box">
-                  <input type="text" placeholder="Search...">
                 </div>
-              </div>
-            </div>
-          </nav>
+            </nav>
+        </div>
     </header>
-    
+
 
     <!-- =========================HERO SECTION================== -->
     <div class="slider__wrap">
@@ -530,7 +529,8 @@
                     <p>1299.00</p>
                 </div>
 
-                <a href="https://play.google.com/store/apps/details?id=com.github.android" class="buy__button">Buy Now</a>
+                <a href="https://play.google.com/store/apps/details?id=com.github.android" class="buy__button">Buy
+                    Now</a>
 
                 <span class="condition">Term & Conditions</span>
             </div>
@@ -581,7 +581,8 @@
                     <p>2499.00</p>
                 </div>
 
-                <a href="https://play.google.com/store/apps/details?id=com.github.android" class="buy__button">Buy Now</a>
+                <a href="https://play.google.com/store/apps/details?id=com.github.android" class="buy__button">Buy
+                    Now</a>
 
                 <span class="condition">Term & Conditions</span>
             </div>
@@ -632,7 +633,8 @@
                     <p>1299.00</p>
                 </div>
 
-                <a href="https://play.google.com/store/apps/details?id=com.github.android" class="buy__button">Buy Now</a>
+                <a href="https://play.google.com/store/apps/details?id=com.github.android" class="buy__button">Buy
+                    Now</a>
 
                 <span class="condition">Term & Conditions</span>
             </div>
@@ -644,21 +646,70 @@
 
     <!-- ============================OFFER BANNER=================== -->
     <section class="offer__banner">
-        <div class="text">
-
-
-            <h1> Let’s Get
-                Your Two - Wheelers <br> Hybridize <br>
-                Convert Your Two-Wheelers Into <br> Electric & CNG</h1>
-            <div class="zing__line">
-                <img src="./assets/images/zig-line.png" alt="">
+        <div class="glide">
+            <!-- Slides here -->
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="text">
+                            <h1> Let’s Get
+                                Your Two - Wheelers <br> Hybridize <br>
+                                Convert Your Two-Wheelers Into <br> Electric & CNG</h1>
+                            <div class="zing__line">
+                                <img src="./assets/images/zig-line.png" alt="">
+                            </div>
+                            <p>Buy our service packages like Road Side Assistance and <br>
+                                Two Wheeler Service Maintenance Card and secure your ride.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.github.android"
+                                class="book__now mini__banner-btn">
+                                Book Now
+                            </a>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="text">
+                            <h1> Let’s Get
+                                Your Two - Wheelers <br> Hybridize <br>
+                                Convert Your Two-Wheelers Into <br> Electric & CNG</h1>
+                            <div class="zing__line">
+                                <img src="./assets/images/zig-line.png" alt="">
+                            </div>
+                            <p>Buy our service packages like Road Side Assistance and <br>
+                                Two Wheeler Service Maintenance Card and secure your ride.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.github.android"
+                                class="book__now mini__banner-btn">
+                                Book Now
+                            </a>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="text">
+                            <h1> Let’s Get
+                                Your Two - Wheelers <br> Hybridize <br>
+                                Convert Your Two-Wheelers Into <br> Electric & CNG</h1>
+                            <div class="zing__line">
+                                <img src="./assets/images/zig-line.png" alt="">
+                            </div>
+                            <p>Buy our service packages like Road Side Assistance and <br>
+                                Two Wheeler Service Maintenance Card and secure your ride.</p>
+                            <a href="https://play.google.com/store/apps/details?id=com.github.android"
+                                class="book__now mini__banner-btn">
+                                Book Now
+                            </a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <p>Buy our service packages like Road Side Assistance and <br>
-                Two Wheeler Service Maintenance Card and secure your ride.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.github.android" class="book__now mini__banner-btn">
-                Book Now
-            </a>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><span
+                        class="ri-arrow-left-s-line"></span> </button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"> <span
+                        class="ri-arrow-right-s-line"></span></button>
+            </div>
+            <!-- Pagination -->
+
         </div>
+
     </section>
 
     <!-- ============================END OFFER BANNER=================== -->
@@ -750,6 +801,11 @@
                             <img src="./assets/images/vespa.png" alt="">
                         </div>
                     </div>
+                    <div class="bike__bx">
+                        <div class="bike-icon">
+                            <p>More...</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -773,18 +829,18 @@
                 <img src="./assets/images/rightqote.png" alt="">
             </div>
             <div class="inner__text">
-                <h1 class="steps">Our Customers</h1>
+                <h1 class="steps smalltext">Our Happy Customers</h1>
                 <!-- <p style="font-weight: 800;">Happy Customers</p> -->
             </div>
             <div class="title">
 
             </div>
 
-            <div class="sub__heading">
+            <!-- <div class="sub__heading">
                 <h3>Happy Customers</h3>
                 <p>Go Serve has hundreds of happy customers. We try our best <br>
                     to provide our customer top-class services at best rates</p>
-            </div>
+            </div> -->
             <!-- <div class="testimonial__wrapper">
                 <div class="t-slider">
                     <div class="t-slide">
@@ -896,8 +952,8 @@
                 <ul class="footer__link">
                     <li><a href="index.html">home</a></li>
                     <li><a href="about.html">About us</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
                 <div class="quik__link">
                     <h4>DOWNLOAD OUR DEMO APPLICATION</h4>
@@ -955,40 +1011,39 @@
     <!-- ==========================END FOOTER SECTION======================== -->
 
     <!--=============== MAIN JS ===============-->
-    <script src="./assets/js/jquery.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/js/swiper.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
 
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
 
-    <script>
-        AOS.init({
-            duration: 1000,
-            delay: 400,
-        });
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
 
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@latest/dist/glide.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/Flicker.js"></script>
+
     <script>
-        $('.slider').slick({
-            dots: true,
-            vertical: false,
-            draggable: true,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            cssEase: 'ease',
-            mobileFirst: true,
-            swipe: true,
-            touchMove: true,
-        });
-
-
+        new Glide('.glide', {
+            autoplay: 4000,
+            animationTimingFunc: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)',
+            rewindDuration: 800,
+        }).mount();
     </script>
 
 
