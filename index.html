@@ -76,7 +76,7 @@
                 <div class="navbar-collapse">
                     <ul class="navbar-nav">
                         <li>
-                            <a href="#">Home</a>
+                            <a href="#" class="active">Home</a>
                         </li>
                         <li>
                             <a href="about.html">About</a>
@@ -1028,6 +1028,14 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
 
+    </script>
+    <script>
+        $(document).ready(function(){
+  $('navbar-nav li a').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+});
+});
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@latest/dist/glide.min.js"></script>

@@ -22,6 +22,7 @@
   --second-alt-color: #ad4d0c;
   --third-alt-color: #6a2f07;
   --active-link: #d1c0bb;
+  --active: var(--black-color);
 
   /*========== Font and typography ==========*/
   --body-font: "Roboto", sans-serif;
@@ -263,7 +264,9 @@ input {
 .logo img {
   width: 100%;
 }
-
+.active{
+    color: var(--active);
+}
 .sub-menu-item {
   padding-left: 1.2rem;
 }
@@ -1015,7 +1018,7 @@ footer {
   overflow: hidden;
 }
 .footer__logo {
-  width: 180px;
+  width: 150px;
 }
 
 .footer__inner {
@@ -2072,7 +2075,7 @@ textarea {
     background-image: url(../images/banner-1.jpg);
   }
   .footer__logo {
-    width: 50px;
+    width: 150px;
   }
   .download img {
     width: 100px;
