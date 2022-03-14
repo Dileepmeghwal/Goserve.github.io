@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @font-face {
   font-family: 'Autography', monospace;
-  src: url(../Autography.otf) format('otf');
+  src: url(../Autography.ttf);
 }
 /*=============== VARIABLES CSS ===============*/
 :root {
