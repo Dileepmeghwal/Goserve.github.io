@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @font-face {
-  font-family: "Autography";
-  src: url("Autography.ttf");
+  font-family: Autography;
+  src: url(Autography.ttf);
 }
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -660,7 +660,7 @@ body > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl
 /*=========================HERO SECTION==================*/
 
 .italic__text {
-  font-family: "Autography";
+  font-family: Autography;
   color: var(--first-color);
   font-size: var(--biggest-font-size);
   font-weight: var(--font-low);
@@ -1407,9 +1407,9 @@ footer {
 .sub__quality {
   margin: var(--mb-0-25) 0;
 }
-.navbar-nav li.active a{
+/* .navbar-nav li.active a{
   background-color: black;
-}
+} */
 /* =================================END ABOUT======================== */
 
 /* ==============================NUMBER COUNT==================== */
@@ -2201,11 +2201,11 @@ textarea {
     width: 90%;
   }
   .left .over__video {
-    width: 200px;
+    width: 134px;
     position: absolute;
-    right: 0px;
-    bottom: -10px;
-  }
+    right: -13px;
+    bottom: -34px;
+}
   .small__overlay {
     width: 160px;
     position: absolute;
