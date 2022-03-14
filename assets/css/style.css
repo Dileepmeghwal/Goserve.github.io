@@ -193,13 +193,16 @@ input {
   color: var(--white-color);
 }
 /*===============HEADER START ===============*/
-
 .main-wrapper a {
   color: var(--first-color);
   text-decoration: none;
 }
 .main-wrapper ul li {
   list-style-type: none;
+}
+.main-wrapper{
+  width: 100%;
+  background-color: var(--first-alt-color);
 }
 .navbar {
   background: #fafafa;
@@ -213,6 +216,7 @@ input {
   flex-direction: column;
   z-index: 1000;
   box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  max-width: 1180px;
 }
 .brand-and-icon {
   display: flex;
@@ -288,9 +292,7 @@ input {
 .logo img {
   width: 100%;
 }
-.active{
-    color: var(--active);
-}
+
 .sub-menu-item {
   padding-left: 1.2rem;
 }
@@ -367,6 +369,7 @@ input {
   position: fixed;
   left: -140px;
   z-index: 1000000000000;
+  display: block;
 }
 .sticky-social-bar .social-icon:hover{
   background-color: #7e7716;
@@ -411,6 +414,7 @@ input {
   .sticky-social-bar {
     width: 50px;
     left: 0;
+    display: none;
   }
   .sticky-social-bar .social-icon {
     transition: .3s ease;
@@ -694,9 +698,7 @@ body > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl
   background-color: #6a2f07;
   color: var(--white-color);
 }
-.active {
-  color: var(--white-color);
-}
+
 
 /*=========================HERO END=================*/
 
@@ -1263,6 +1265,7 @@ footer {
   color: var(--small-text);
   position: relative;
   left: 15px;
+  font-size: 1rem;
 }
 .footer__box p {
   line-height: 24px;
@@ -1371,17 +1374,20 @@ footer {
 .left .bg__img {
   position: relative;
   width: 100%;
+  transition: .5s ease;
 }
 .left .bg__img img {
   width: 100%;
   border-radius: 0.5rem;
+  transition: .5s ease;
 }
 .left .over__video {
-  width: 200px;
+  width: 250px;
   position: absolute;
   right: -50px;
-  bottom: -10px;
+  bottom: -20px;
 }
+
 .left .over__video video {
   width: 100%;
   border-radius: 0.5rem;
@@ -1400,6 +1406,9 @@ footer {
 }
 .sub__quality {
   margin: var(--mb-0-25) 0;
+}
+.navbar-nav li.active a{
+  background-color: black;
 }
 /* =================================END ABOUT======================== */
 
@@ -1509,7 +1518,7 @@ footer {
   background-size: cover;
   overflow: hidden;
   position: relative;
-  right: -50px;
+  right: -65px;
 }
 .bike__service {
   width: 100%;
@@ -1573,7 +1582,7 @@ footer {
   border: 2px solid var(--input-border);
   border-radius: 0.5rem;
   position: relative;
-  min-height: 60vh;
+  /* min-height: 60vh; */
   z-index: 88;
   overflow: hidden;
 }
@@ -1776,6 +1785,7 @@ textarea {
   justify-content: space-between;
   align-items: center;
   align-content: space-between;
+  margin-top: 3rem;
 }
 .our__francise .f-box {
   /* background-color: var(--circle-bg); */
@@ -1810,6 +1820,11 @@ textarea {
   padding: var(--mb-0-25) 0;
 }
 
+
+
+
+
+/* Testimonial Swiper */
 .swiper {
   width: 600px;
   height: 300px;
@@ -1874,6 +1889,9 @@ textarea {
     width: 0px;
   }
   .about__inner{
+    margin: 2rem;
+  }
+  .mission__inner{
     margin: 2rem;
   }
 }
@@ -2113,7 +2131,13 @@ textarea {
   }
   .francise__wrapper {
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 90%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .location__section{
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   .man__img {
