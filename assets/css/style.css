@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @font-face {
-  font-family: Autography;
-  src: url(Autography.ttf);
+  font-family: 'Autography', monospace;
+  src: url(../Autography.otf) format('otf');
 }
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -660,7 +660,7 @@ body > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl
 /*=========================HERO SECTION==================*/
 
 .italic__text {
-  font-family: Autography;
+  font-family: 'Autography';
   color: var(--first-color);
   font-size: var(--biggest-font-size);
   font-weight: var(--font-low);
