@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 @font-face {
   font-family: 'Autography', monospace;
   src: url(../Autography.ttf);
@@ -754,6 +755,10 @@ body > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl
   position: absolute;
   left: 0;
 }
+.circle {
+  stroke: #006600;
+  fill  : #00cc00;
+}
 
 .counter {
   position: relative;
@@ -817,6 +822,7 @@ body > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl
 .service__wrapper:nth-child(4) {
   border: none;
 }
+
 .service__icon img {
   width: 35%;
   margin-top: 23px;
@@ -835,10 +841,23 @@ body > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl
   box-shadow: 0px -2px 13px rgba(8, 10, 10, 0.2);
   overflow: hidden;
 }
+#periodic-service{
+  align-items: flex-start;
+}
 .service__image {
   width: 100%;
-  height: 250px;
+  /* height: 250px; */
   overflow: hidden;
+}
+
+.service__image img{
+  transition: all .4s ease-in-out;
+  filter: saturate(2);
+  background-blend-mode: darken;
+}
+
+.service__image img:hover{
+  transform: scale(1.2);
 }
 
 .service__card .card__text {
@@ -886,7 +905,9 @@ body > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl
 .overlap img {
   width: 100%;
   border-radius: 0.5rem;
+  transition: all 0.3s ease;
 }
+
 .small__overlay {
   width: 300px;
   position: absolute;
