@@ -345,6 +345,7 @@ input {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 .item-two{
     background-image: url(../images/b-two.jpg);
@@ -358,6 +359,10 @@ input {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+
+
 
 
 .sticky-social-bar {
@@ -571,6 +576,8 @@ input {
 .main__text{
     transform: translateY(135px);
     padding: 1rem;
+    animation: down 5s linear 2s infinite alternate;
+    transition: .5s ease;
 }
 /* element.style{
     height: 667px !important;
@@ -655,6 +662,24 @@ body > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ====================END SLICK BANNER SLIDER=============
 
 
@@ -680,6 +705,22 @@ body > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl
   color: var(--white-color);
   font-size: var(--normal-font-size);
 }
+.main__text .heading{
+  animation: slideLeft 1.5s forwards;
+  opacity: 0;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  } 
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
 
 .main__text .book__now {
   color: var(--white-color);
@@ -698,6 +739,12 @@ body > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl
 .main__text .book__now:hover {
   background-color: #6a2f07;
   color: var(--white-color);
+}
+
+
+.main__text h1{
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 
@@ -1135,6 +1182,69 @@ body > div.owl-carousel.owl-theme.owl-loaded.owl-drag > div.owl-nav > button.owl
   position: relative;
   top: 10px;
 }
+.bike__wrapper .right{
+  position: relative;
+}
+.shape1{
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  position: absolute;
+  left: -100px;
+  top: -50px;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.23);
+  transition: .4s ease;
+}
+
+.shape2{
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  box-shadow: 0px 2px 2px  rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  position: absolute;
+  left: -100px;
+  bottom: 150px;
+}
+
+/* .shape3{
+  width: 100px;
+  height: 100px;
+  background-image: url(https://images.pexels.com/photos/8986105/pexels-photo-8986105.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+  background-size: cover;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  position: absolute;
+} */
+/* .shape4{
+  width: 100px;
+  height: 100px;
+  background-image: url(https://images.pexels.com/photos/8986105/pexels-photo-8986105.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+  background-size: cover;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  position: absolute;
+  right: 220px;
+  bottom: 0;
+} */
+.shape{
+  width: 380px;
+  height: 380px;
+  background-color: #006600;
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  background-image: url(https://images.pexels.com/photos/4116220/pexels-photo-4116220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.shape img:hover{
+  transform: scale(1.2);
+}
+
+
+
+
+
+
 /* .bike__bx:hover{
     background-color: var(--circle-bg);
     border-radius: .5rem;
