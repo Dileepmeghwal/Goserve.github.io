@@ -1751,6 +1751,9 @@ footer {
 .service__details {
   margin: var(--mb-2) 0;
 }
+.service__details img{
+  width: 100%;
+}
 .service__details p {
   line-height: 24px;
   margin-bottom: var(--mb-1);
@@ -2029,7 +2032,7 @@ textarea {
 
 @media screen and (max-width: 768px) {
 
-  .inner__text h1 {
+  /* .inner__text h1 {
     word-break: break-all;
     font-size: 3rem;
   }
@@ -2038,7 +2041,7 @@ textarea {
     height: 100vh;
     background-position: left center;
     background-size: cover;
-  }
+  } */
 
   .title h3 {
     transform: translateY(-40px);
@@ -2451,6 +2454,28 @@ textarea {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Left Side Buttons Start*/
 
 
@@ -2527,3 +2552,7 @@ textarea {
     transform: translateY(-25px) !important;
   }
 }
+
+
+
+
