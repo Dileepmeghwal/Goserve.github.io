@@ -1287,13 +1287,15 @@ footer {
   grid-template-columns: 25% 24% 25% 20%;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 1rem;
+  font-size: 15px;
 }
 .footer__box .quik__link {
   text-transform: capitalize;
   position: relative;
   color: var(--first-color);
   margin-bottom: var(--mb-1);
+  font-size: 16px;
 }
 .footer__box .quik__link::after {
   content: "";
