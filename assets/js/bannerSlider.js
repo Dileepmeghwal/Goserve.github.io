@@ -39,4 +39,3 @@ $(document).ready(function () {
 //     touchPosDiff,
 //     ignoreTouch = 30;
 // ;
-

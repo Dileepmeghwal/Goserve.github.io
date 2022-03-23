@@ -485,6 +485,18 @@
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./assets/js/Flicker.js"></script>
+
+    <script>
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('a');
+        const menuLength = menuItem.length
+        for (let i = 0; i < menuLength; i++) {
+            if (menuItem[i].href === currentLocation) {
+                menuItem[i].className = "active"
+            }
+        }
+    </script>
+    
     <script type="text/javascript">
 
         var _gaq = _gaq || [];

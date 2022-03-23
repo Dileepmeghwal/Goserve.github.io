@@ -82,7 +82,7 @@
                 <div class="navbar-collapse">
                     <ul class="navbar-nav">
                         <li>
-                            <a href="#" class="">Home</a>
+                            <a href="#">Home</a>
                         </li>
                         <li>
                             <a href="about.html">About</a>
@@ -259,14 +259,16 @@
         </div>
         <div class="booking__inner inner text__container">
             <div class="inner__text">
-                <h1 class="steps smaller card-box" data-aos="fade-right" transition-duration: 4000ms data-aos-duration='4000' data-aos-delay="2000">Online Booking Steps</h1>
+                <h1 class="steps smaller card-box" data-aos="fade-right" transition-duration: 4000ms
+                    data-aos-duration='4000' data-aos-delay="2000">Online Booking Steps</h1>
             </div>
             <div class="title">
 
             </div>
 
             <div class="sub__heading">
-                <p data-aos="fade-left" transition-duration: 4000ms data-aos-duration='4000' data-aos-delay="2000">A Reliable Two Wheeler Repair Service in <br>
+                <p data-aos="fade-left" transition-duration: 4000ms data-aos-duration='4000' data-aos-delay="2000">A
+                    Reliable Two Wheeler Repair Service in <br>
                     Ahmedabad - <span>Book Online</span> </p>
             </div>
 
@@ -309,11 +311,12 @@
             <div class="small__vector">
                 <img src="./assets/images/small-vector.png" alt="">
             </div>
-            <div class="small__vector__two" >
+            <div class="small__vector__two">
                 <img src="./assets/images/small-vector.png" alt="">
             </div>
             <div class="inner__text">
-                <h1 class="steps " data-aos="fade-right" transition-duration: 4000ms data-aos-duration='4000' data-aos-delay="2000">Our Services</h1>
+                <h1 class="steps " data-aos="fade-right" transition-duration: 4000ms data-aos-duration='4000'
+                    data-aos-delay="2000">Our Services</h1>
             </div>
             <div class="title">
                 <!-- <h3 class="move">Our Services</h3> -->
@@ -324,7 +327,8 @@
             </div>
 
             <div class="services__wraper text__container flex" id="periodic-service">
-                <div class="service__card" data-aos="fade-up" transition-duration: 4000ms data-aos-duration='4000' data-aos-delay="2000">
+                <div class="service__card" data-aos="fade-up" transition-duration: 4000ms data-aos-duration='4000'
+                    data-aos-delay="2000">
                     <div class="service__image">
                         <img src="./assets/images/bikerepair1.jpg" alt="">
                     </div>
@@ -355,7 +359,8 @@
                         <br>
                     </div>
                 </div>
-                <div class="service__card" data-aos="fade-up" transition-duration: 4000ms data-aos-duration='4000' data-aos-delay="2000">
+                <div class="service__card" data-aos="fade-up" transition-duration: 4000ms data-aos-duration='4000'
+                    data-aos-delay="2000">
                     <div class="service__image">
                         <img src="./assets/images/two-wheeler.jpg" alt="">
                     </div>
@@ -389,7 +394,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="service__card" data-aos="fade-up" transition-duration: 4000ms data-aos-duration='4000' data-aos-delay="2000">
+                <div class="service__card" data-aos="fade-up" transition-duration: 4000ms data-aos-duration='4000'
+                    data-aos-delay="2000">
                     <div class="service__image">
                         <img src="./assets/images/four-w-b.jpg" alt="">
                     </div>
@@ -683,7 +689,7 @@
     <!-- ============================OFFER BANNER=================== -->
     <section class="offer__banner">
         <div class="glide text__container">
-            
+
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
                     <li class="glide__slide">
@@ -742,12 +748,12 @@
                 <button class=" ripple btn glide__arrow glide__arrow--right" data-glide-dir=">"> <span
                         class="ri-arrow-right-s-line"></span></button>
             </div>
-            
+
 
         </div>
 
     </section>
-    
+
 
     <!-- ============================END OFFER BANNER=================== -->
 
@@ -875,7 +881,7 @@
                 <div class="shape4"></div>
 
                 <div class="shape">
-                    
+
                 </div>
             </div>
         </div>
@@ -1047,6 +1053,16 @@
     <script src="script.js"></script>
 
 
+    <script>
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('a');
+        const menuLength = menuItem.length
+        for (let i = 0; i < menuLength; i++) {
+            if (menuItem[i].href === currentLocation) {
+                menuItem[i].className = "active"
+            }
+        }
+    </script>
 
     <script type="text/javascript">
 

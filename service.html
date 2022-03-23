@@ -195,7 +195,10 @@
                         RSA service will ensure that you are provided with quick repair services to get you moving. This
                         includes fixing starting issues, minor electrical repairs, repairs to chain, replacement of
                         snapped cables, & sprockets-based issues, cleaning of faulty spark plugs, etc.</p>
-                    <img src="./assets/images/service-main.png" alt="">
+                        <div class="puncture__img">
+                            <img src="./assets/images/service-main.png" alt="">
+                        </div>
+                    
                 </div>
                 <div class="service__details"  data-aos="fade-down">
                     <p>If we are unable to repair the vehicle at the roadside (within a reasonable time), we will
@@ -452,6 +455,18 @@
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script src="./assets/js/Flicker.js"></script>
     <script src="script.js"></script>
+
+    <script>
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('a');
+        const menuLength = menuItem.length
+        for (let i = 0; i < menuLength; i++) {
+            if (menuItem[i].href === currentLocation) {
+                menuItem[i].className = "active"
+            }
+        }
+    </script>
+    
     <script type="text/javascript">
 
         var _gaq = _gaq || [];

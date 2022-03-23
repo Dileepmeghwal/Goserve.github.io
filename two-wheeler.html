@@ -187,33 +187,49 @@
                     </div>
                 </div>
             </div>
-            <div class="services__content" >
+            <div class="services__content">
                 <div class="service__details" data-aos="zoom-in">
                     <h1>Two Wheeler Breakdown</h1>
                     <h3>Puncture </h3>
-                    <p>Don’t let a flat tire or tire puncture ruin your travel. We will help you on-site with all the puncture-related services.</p>
-                    <img src="./assets/images/service-main.png" alt="">
+                    <p>Don’t let a flat tire or tire puncture ruin your travel. We will help you on-site with all the
+                        puncture-related services.</p>
+                    <div class="puncture__img">
+                        <img src="https://images.unsplash.com/photo-1559219582-54efb8aba261?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+                            alt="">
+                    </div>
                 </div>
-                <div class="service__details"  data-aos="fade-down">
+                <div class="service__details" data-aos="fade-down">
                     <h3>Petrol Delivery</h3>
-                    <p>If your vehicle runs out of fuel while riding, we will deliver it to the location of breakdown. 
+                    <p>If your vehicle runs out of fuel while riding, we will deliver it to the location of breakdown.
                     </p>
+                    <div class="service__flex__detail">
+                        <div class="machine__img" data-aos="fade-right">
+                            <img src="https://images.unsplash.com/photo-1635627529674-912a0176c6cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                                alt="">
+                        </div>
+                        <div class="machine__img" data-aos="fade-left">
+                            <img src="https://images.unsplash.com/photo-1644246905181-c3753e9a82bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                                alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="service__details"  data-aos="fade-down">
+                <div class="service__details" data-aos="fade-down">
                     <h3>Vehicle Breakdown</h3>
-                    <p>If your vehicle gets breakdown in the middle of nowhere,  we will provide minor mechanical services like cable replacement, starting issues, chain-related issues emerging out of damage or grease, and other issues which can be repaired on the spot.</p>
+                    <p>If your vehicle gets breakdown in the middle of nowhere, we will provide minor mechanical
+                        services like cable replacement, starting issues, chain-related issues emerging out of damage or
+                        grease, and other issues which can be repaired on the spot.</p>
                 </div>
                 <div class="service__details">
                     <div class="service__flex__detail">
-                        <div class="machine__img"   data-aos="fade-right">
+                        <div class="machine__img" data-aos="fade-right">
                             <img src="./assets/images/service-2nd.png" alt="">
                         </div>
-                        <div class="machine__img"   data-aos="fade-left">
+                        <div class="machine__img" data-aos="fade-left">
                             <img src="./assets/images/service-3nd.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="service__details">
+                <div class="service__details" data-aos="fade-down">
                     <h1>What is Brake Service All About?</h1>
                     <p>The number of free claims, which you can make during the membership year, is shown on your
                         membership plans summary. Paid RSA is also available for non Annual members.</p>
@@ -439,12 +455,25 @@
     </footer>
 
     <!-- ==========================END FOOTER SECTION======================== -->
-    <!--jQuery-->
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="./assets/js/Flicker.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/Flicker.js"></script>
     <script src="script.js"></script>
+
+    <script>
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll('a');
+        const menuLength = menuItem.length
+        for (let i = 0; i < menuLength; i++) {
+            if (menuItem[i].href === currentLocation) {
+                menuItem[i].className = "active"
+            }
+        }
+    </script>
+
+
     <script type="text/javascript">
 
         var _gaq = _gaq || [];
