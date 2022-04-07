@@ -4,6 +4,9 @@
   font-family: "Autography", monospace;
   src: url(../Autography.ttf);
 }
+html{
+  font-size: 16px;
+}
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
