@@ -10,3 +10,4 @@ AOS.init({
     throttleDelay: 99,
 
 });
+gsap.to(".heading", {x: 50, duration: 2, rotation: 360})

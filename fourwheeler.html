@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--=============== FAVICONS ===============-->
-    <link rel="shortcut icon" href="assets/images/logo.png" type="image/png">
+    <link rel="shortcut icon" href="assets/images/favicon.jpg" type="image/png">
 
     <!-- ================AOS====================== -->
     <link rel="stylesheet" href="https://code.jquery.com/jquery-3.6.0.min.js">
@@ -162,7 +162,7 @@
     <!-- =========================SERVICES MAIN================== -->
     <section class="services__main">
         <div class="services__wrap text__container">
-            <div class="pop-up" data-aos="fade-down">
+            <div class="pop-up" data-aos="slide-right">
                 <div class="header">How Can We Help?</div>
                 <div class="text">
                     <div class="footer__box">
@@ -186,8 +186,8 @@
                     </div>
                 </div>
             </div>
-            <div class="services__content" data-aos="fade-down">
-                <div class="service__details">
+            <div class="services__content">
+                <div class="service__details"  data-aos="slide-left">
                     <h1>Four Wheeler Breakdown</h1>
                     <h3>Puncture</h3>
                     <p>Don’t let a flat tire or tire puncture ruin your travel. We will help you on-site with all the puncture-related services. 
@@ -197,11 +197,11 @@
                         <p class="point">The cost of the puncture replacement parts will be borne by the customer every time.</p>
                         <p class="point">The additional cost of the puncture repair which is not covered under the plan will have to be borne by the user.</p>
                     <div class="puncture__img">
-                        <img src="https://images.pexels.com/photos/8231099/pexels-photo-8231099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                            width="100%" alt="flate tire">
+                        <img style="width: 650px; height: 400px; border-radius: 10px;" src="https://images.pexels.com/photos/8231099/pexels-photo-8231099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                             alt="flate tire">
                     </div>
                 </div>
-                <div class="service__details" data-aos="fade-down">
+                <div class="service__details" data-aos="slide-left">
                     <h3>Petrol Delivery</h3>
                     <p>If your vehicle runs out of fuel while riding, we will deliver it to the location of breakdown.
                         <p class="point">Free fuel delivery services will be according to the client's Membership plan. </p>
@@ -209,7 +209,17 @@
                         <p class="point">Every time the cost of fuel will be borne by the user</p>
                     </p>
                 </div>
-                <div class="service__details" data-aos="slide-down">
+                <div class="service__flex__detail">
+                    <div class="machine__img" data-aos="fade-right">
+                        <img src="./assets/images/petrol.jpg" style="border-radius: 10px;"
+                            alt="">
+                    </div>
+                    <div class="machine__img" data-aos="fade-left">
+                        <img src="./assets/images/petrol2.jpg" style="border-radius: 10px;"
+                            alt="">
+                    </div>
+                </div>
+                <div class="service__details" data-aos="slide-left">
                     <h3>Vehicle Breakdown</h3>
                     <p>If your vehicle gets breakdown in the middle of nowhere, we will provide minor mechanical
                         services like cable replacement, starting issues, chain-related issues emerging out of damage or
@@ -218,7 +228,19 @@
                         </p>
                         <p class="point">The cost of the spare parts will have to be borne by the user every time.</p>
                 </div>
-                <div class="service__details" data-aos="fade-down">
+                <div class="service__details">
+                    <div class="service__flex__detail">
+                        <div class="machine__img"  data-aos="fade-left">
+                            <img style="border-radius: 10px;" src="./assets/images/brakdown1.jpg"
+                                alt="">
+                        </div>
+                        <div class="machine__img"  data-aos="fade-left">
+                            <img style="border-radius: 10px;" src="./assets/images/brekdown.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="service__details" data-aos="slide-left">
                     <h3>Towing</h3>
                     <p>If your vehicle can not be in repairable condition on the spot, We will help you tow it to your
                         desired location.</p>
@@ -231,65 +253,62 @@
                         </p>
                 </div>
                 <div class="service__details">
-                    <div class="service__flex__detail" data-aos="fade-down">
+                    <div class="service__flex__detail" data-aos="slide-left">
                         <div class="machine__img">
-                            <img src="https://images.pexels.com/photos/943930/pexels-photo-943930.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=540"
+                            <img style="border-radius: 10px;" src="https://images.pexels.com/photos/943930/pexels-photo-943930.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=540"
                                 alt="">
                         </div>
                         <div class="machine__img">
-                            <img src="https://images.pexels.com/photos/8986100/pexels-photo-8986100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            <img style="border-radius: 10px;" src="https://images.pexels.com/photos/8986100/pexels-photo-8986100.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                                 alt="">
                         </div>
                     </div>
                 </div>
-                <div class="service__details" data-aos="fade-down">
+                <div class="service__details" data-aos="slide-left">
                     <h3>Duplicate Key Recovery</h3>
                     <p>In case your key is lost, We will get your spare key from your given address & deliver it to you.
                     </p>
                     <p class="point">The number of Free delivery services would be according to the client's Membership plan.</p>
                     <p class="point">The number of free kilometers for the retriever of the lost key will be according to the client's membership plan.</p>
-
-                    <div class="service__flex__detail">
-                        <div class="machine__img">
-                            <img src="https://images.unsplash.com/photo-1562770584-eaf50b017307?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8a2V5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                        </div>
-                        <div class="machine__img">
-                            <img src="https://images.unsplash.com/photo-1634979149798-e9a118734e93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGtleXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                        </div>
+                </div>
+                <div class="service__flex__detail">
+                    <div class="machine__img" data-aos="slide-left">
+                        <img src="./assets/images/key1.jpg" style="border-radius: 10px;"
+                            alt="">
+                    </div>
+                    <div class="machine__img" data-aos="slide-left">
+                        <img src="./assets/images/key2.jpg" style="border-radius: 10px;"
+                            alt="">
                     </div>
                 </div>
-                <div class="service__details" data-aos="fade-down">
+                <div class="service__details" data-aos="slide-left">
                     <h3>Battery Jump Start</h3>
                     <p>In Case your car gets stuck due to a dead battery just call us at Go Serve we will help you by providing a jump start service.</p>
                     <p class="point">Free Battery Jump Start will be up to the limit mentioned in the client's membership plan.</p>
                     <p class="point">The number of Free Battery Jump Starts will be according to the client's Membership plan.</p>
-
-                    <div class="service__flex__detail">
-                        <div class="machine__img">
-                            <img src="https://images.unsplash.com/photo-1562770584-eaf50b017307?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8a2V5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                        </div>
-                        <div class="machine__img">
-                            <img src="https://images.unsplash.com/photo-1634979149798-e9a118734e93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGtleXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                        </div>
+                </div>
+                <div class="service__flex__detail">
+                    <div class="machine__img" data-aos="slide-left">
+                        <img style="border-radius: 10px;" src="./assets/images/bettery.jpg"
+                            alt="">
+                    </div>
+                    <div class="machine__img" data-aos="slide-left">
+                        <img style="border-radius: 10px;" src="./assets/images/bettry-two.jpg"
+                            alt="">
                     </div>
                 </div>
-                <div class="service__details" data-aos="fade-down">
+                <div class="service__details" data-aos="slide-left">
                     <h3>Vehicle Customization</h3>
                     <p>In Case you want to convert your vehicle into an Electrical or CNG Vehicle just call us at Go Serve & We will convert your vehicle as per your requirement.</p>
-
-                    <div class="service__flex__detail">
-                        <div class="machine__img">
-                            <img src="https://images.unsplash.com/photo-1562770584-eaf50b017307?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8a2V5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                        </div>
-                        <div class="machine__img">
-                            <img src="https://images.unsplash.com/photo-1634979149798-e9a118734e93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGtleXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-                                alt="">
-                        </div>
+                </div>
+                <div class="service__flex__detail">
+                    <div class="machine__img" data-aos="slide-left">
+                        <img style="border-radius: 10px;" src="./assets/images/modifiy (2).jpg"
+                            alt="">
+                    </div>
+                    <div class="machine__img" data-aos="slide-left">
+                        <img style="border-radius: 10px;" src="./assets/images/modifiy (1).jpg"
+                            alt="">
                     </div>
                 </div>
                 <div class="service__details">
